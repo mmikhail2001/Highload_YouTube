@@ -22,13 +22,11 @@
 - **Размер аудитории** на локальном рынке \[[1](https://mediascope.net/data/#internet)]
 	- месячный охват 95 млн. человек
 	- дневной охват 52 млн. человек
-- Среднее время просмотра в день - 85 мин.
-	- ![|](img/Pasted%20image%2020230909125310.png)
+- Среднее время просмотра в день - 85 мин \[[2](https://mediascope.net/upload/iblock/ee9/b91rtnqh1jf0zhalydi9jf125voo5o8e/медиапотребление.pdf)]
 - Некоторые факты об аудитории
-	- 15% доля YouTube в интернет-потреблении на локальном рынке (18% - доля видео в целом)
-	- ![|300](img/Pasted%20image%2020230911191653.png)
+	- 15% доля YouTube в интернет-потреблении на локальном рынке (18% - доля видео в целом) \[[3](https://mediascope.net/upload/iblock/ee9/b91rtnqh1jf0zhalydi9jf125voo5o8e/медиапотребление.pdf)]
 	- Средний возраст 25-34 лет
-	- 40% - доля женщин \[[2](https://bloggingwizard.com/youtube-statistics/#:~:text=60.59%25%20of%20YouTube%E2%80%99s%20audience%20is%20male)]
+	- 40% - доля женщин \[[4](https://bloggingwizard.com/youtube-statistics/#:~:text=60.59%25%20of%20YouTube%E2%80%99s%20audience%20is%20male)]
 
 ## 2. Расчет нагрузки<a name="2"></a>
 
@@ -36,23 +34,23 @@
 
 |Метрика|Аудитория|Значение|Обозначение|
 | ------------- | --- |-------------|--|
-|MAU (чел.)\[[3](https://mediascope.net/data/#internet)]|Мир|2500 млн.|MAU_WORLD|
-|MAU (чел.)\[[4](https://mediascope.net/data/#internet)]|Россия|95 млн.|MAU_RUS|
-|DAU (чел.)\[[5](https://mediascope.net/data/#internet)]|Россия|52 млн.|MAU_RUS|
-|Количество просмотров / месяц \[[6](https://www.globalmediainsight.com/blog/youtube-users-statistics/#:~:text=YouTube%20Views%20by%20Country)]|Россия|207 млрд.|VIEWS_MONTH|
-|Среднее время просмотра / день (мин)\[[7](https://inclient.ru/youtube-stats/#:~:text=%D0%92%20%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8%20YouTube%20%D1%81%D0%BC%D0%BE%D1%82%D1%80%D1%8F%D1%82%20%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%80%D0%BD%D0%BE%2086%20%D0%BC%D0%B8%D0%BD%D1%83%D1%82%20%D0%B2%20%D0%B4%D0%B5%D0%BD%D1%8C)]|Россия|86|VIEW_DURATION_DAY|
-|Загрузка видео / минута (час)\[[8](https://bloggingwizard.com/youtube-statistics/#:~:text=That%E2%80%99s%2030%2C000%20hours%20of%20video%20uploaded%20every%20hour%2C%20720%2C000%20uploaded%20every%20day%2C%205.04%20million%20uploaded%20every%20week%2C%2021.9%20million%20uploaded%20every%20month%20and%20262.8%20million%20uploaded%20every%20year.)] |Мир|500|UPLOAD_MINUTE|
-|Загрузка видео / час (час)\[[9](https://bloggingwizard.com/youtube-statistics/#:~:text=That%E2%80%99s%2030%2C000%20hours%20of%20video%20uploaded%20every%20hour%2C%20720%2C000%20uploaded%20every%20day%2C%205.04%20million%20uploaded%20every%20week%2C%2021.9%20million%20uploaded%20every%20month%20and%20262.8%20million%20uploaded%20every%20year.)] |Мир|30 тыс.|UPLOAD_HOUR|
-|Загрузка видео / день (час)\[[10](https://bloggingwizard.com/youtube-statistics/#:~:text=That%E2%80%99s%2030%2C000%20hours%20of%20video%20uploaded%20every%20hour%2C%20720%2C000%20uploaded%20every%20day%2C%205.04%20million%20uploaded%20every%20week%2C%2021.9%20million%20uploaded%20every%20month%20and%20262.8%20million%20uploaded%20every%20year.)] |Мир|720 тыс.|UPLOAD_DAY|
-|Загрузка видео / месяц (час)\[[11](https://bloggingwizard.com/youtube-statistics/#:~:text=That%E2%80%99s%2030%2C000%20hours%20of%20video%20uploaded%20every%20hour%2C%20720%2C000%20uploaded%20every%20day%2C%205.04%20million%20uploaded%20every%20week%2C%2021.9%20million%20uploaded%20every%20month%20and%20262.8%20million%20uploaded%20every%20year.)] |Мир|21.9 млн.|UPLOAD_MONTH|
-|Загрузка видео / год (час)\[[12](https://bloggingwizard.com/youtube-statistics/#:~:text=That%E2%80%99s%2030%2C000%20hours%20of%20video%20uploaded%20every%20hour%2C%20720%2C000%20uploaded%20every%20day%2C%205.04%20million%20uploaded%20every%20week%2C%2021.9%20million%20uploaded%20every%20month%20and%20262.8%20million%20uploaded%20every%20year.)] |Мир|263 млн.|UPLOAD_YEAR|
-|Передача видео / минуту (час)\[[13](https://www.wyzowl.com/youtube-stats/#:~:text=An%20average%20of%20694%2C000%20hours%20of%20video%20are%20streamed%20by%20YouTuber%20users%20each%20and%20every%20minute.%20This%20is%20even%20higher%20than%20Netflix%2C%20whose%20users%20stream%20452%2C000%20hours%20per%20minute.)] |Мир|694 тыс.|DOWNLOAD_MIN|
-|Количество комментариев / 1000 просмотров\[[14](https://tubularlabs.com/blog/3-metrics-youtube-success/#:~:text=Comments%20to%20Views%3A%20How%20High%20is%20Engagement%3F)]|Мир|5|COMMENTS|
-|Количество лайков / 100 просмотров\[[15](https://tubularlabs.com/blog/3-metrics-youtube-success/#:~:text=Likes%20to%20Views%3A%20How%20Popular%20is%20Your%20Video%3F)].|Мир|4|LIKES|
-|Количество новых подписок / день / канал \[[16](https://medium.com/@jasonrbodie/average-youtube-channel-growth-rate-f6837584c9ac)]|Мир|1000|SUBS|
-|Средняя продолжительность видео (мин)\[[17](https://bloggingwizard.com/youtube-statistics/#:~:text=7.-,The%20average%20length%20of%20a%20YouTube%20video%20is%2011.7%20minutes,-According%20to%20Statista)]|Мир|11.7|DURATION|
-|Количество посещений страниц / день / пользователь \[[18](https://www.globalmediainsight.com/blog/youtube-users-statistics/#:~:text=An%20average%20YouTube%20visitor%20checks%20nearly%20nine%20pages%20per%20day.%C2%A0)]|Мир|9|VISITS_DAY_USER|
-|Средняя продолжительность посещения сайт (мин)\[[19](https://inclient.ru/youtube-stats/#:~:text=%D0%9F%D0%BE%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D0%BC%20Similarweb%20%D1%81%D1%80%D0%B5%D0%B4%D0%BD%D1%8F%D1%8F%20%D0%BF%D1%80%D0%BE%D0%B4%D0%BE%D0%BB%D0%B6%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D1%8C%20%D0%BF%D0%BE%D1%81%D0%B5%D1%89%D0%B5%D0%BD%D0%B8%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0%20youtube.com%20%D1%81%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BB%D1%8F%D0%B5%D1%82%2020%20%D0%BC%D0%B8%D0%BD%D1%83%D1%82%2016%20%D1%81%D0%B5%D0%BA%D1%83%D0%BD%D0%B4)]|Мир|20|VISIT_TIME|
+|MAU (чел.)\[[5](https://mediascope.net/data/#internet)]|Мир|2500 млн.|MAU_WORLD|
+|MAU (чел.)\[[6](https://mediascope.net/data/#internet)]|Россия|95 млн.|MAU_RUS|
+|DAU (чел.)\[[7](https://mediascope.net/data/#internet)]|Россия|52 млн.|MAU_RUS|
+|Количество просмотров / месяц \[[8](https://www.globalmediainsight.com/blog/youtube-users-statistics/#:~:text=YouTube%20Views%20by%20Country)]|Россия|207 млрд.|VIEWS_MONTH|
+|Среднее время просмотра / день (мин)\[[9](https://inclient.ru/youtube-stats/#:~:text=%D0%92%20%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8%20YouTube%20%D1%81%D0%BC%D0%BE%D1%82%D1%80%D1%8F%D1%82%20%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%80%D0%BD%D0%BE%2086%20%D0%BC%D0%B8%D0%BD%D1%83%D1%82%20%D0%B2%20%D0%B4%D0%B5%D0%BD%D1%8C)]|Россия|86|VIEW_DURATION_DAY|
+|Загрузка видео / минута (час)\[[10](https://bloggingwizard.com/youtube-statistics/#:~:text=That%E2%80%99s%2030%2C000%20hours%20of%20video%20uploaded%20every%20hour%2C%20720%2C000%20uploaded%20every%20day%2C%205.04%20million%20uploaded%20every%20week%2C%2021.9%20million%20uploaded%20every%20month%20and%20262.8%20million%20uploaded%20every%20year.)] |Мир|500|UPLOAD_MINUTE|
+|Загрузка видео / час (час)\[[11](https://bloggingwizard.com/youtube-statistics/#:~:text=That%E2%80%99s%2030%2C000%20hours%20of%20video%20uploaded%20every%20hour%2C%20720%2C000%20uploaded%20every%20day%2C%205.04%20million%20uploaded%20every%20week%2C%2021.9%20million%20uploaded%20every%20month%20and%20262.8%20million%20uploaded%20every%20year.)] |Мир|30 тыс.|UPLOAD_HOUR|
+|Загрузка видео / день (час)\[[12](https://bloggingwizard.com/youtube-statistics/#:~:text=That%E2%80%99s%2030%2C000%20hours%20of%20video%20uploaded%20every%20hour%2C%20720%2C000%20uploaded%20every%20day%2C%205.04%20million%20uploaded%20every%20week%2C%2021.9%20million%20uploaded%20every%20month%20and%20262.8%20million%20uploaded%20every%20year.)] |Мир|720 тыс.|UPLOAD_DAY|
+|Загрузка видео / месяц (час)\[[13](https://bloggingwizard.com/youtube-statistics/#:~:text=That%E2%80%99s%2030%2C000%20hours%20of%20video%20uploaded%20every%20hour%2C%20720%2C000%20uploaded%20every%20day%2C%205.04%20million%20uploaded%20every%20week%2C%2021.9%20million%20uploaded%20every%20month%20and%20262.8%20million%20uploaded%20every%20year.)] |Мир|21.9 млн.|UPLOAD_MONTH|
+|Загрузка видео / год (час)\[[14](https://bloggingwizard.com/youtube-statistics/#:~:text=That%E2%80%99s%2030%2C000%20hours%20of%20video%20uploaded%20every%20hour%2C%20720%2C000%20uploaded%20every%20day%2C%205.04%20million%20uploaded%20every%20week%2C%2021.9%20million%20uploaded%20every%20month%20and%20262.8%20million%20uploaded%20every%20year.)] |Мир|263 млн.|UPLOAD_YEAR|
+|Передача видео / минуту (час)\[[15](https://www.wyzowl.com/youtube-stats/#:~:text=An%20average%20of%20694%2C000%20hours%20of%20video%20are%20streamed%20by%20YouTuber%20users%20each%20and%20every%20minute.%20This%20is%20even%20higher%20than%20Netflix%2C%20whose%20users%20stream%20452%2C000%20hours%20per%20minute.)] |Мир|694 тыс.|DOWNLOAD_MIN|
+|Количество комментариев / 1000 просмотров\[[16](https://tubularlabs.com/blog/3-metrics-youtube-success/#:~:text=Comments%20to%20Views%3A%20How%20High%20is%20Engagement%3F)]|Мир|5|COMMENTS|
+|Количество лайков / 100 просмотров\[[17](https://tubularlabs.com/blog/3-metrics-youtube-success/#:~:text=Likes%20to%20Views%3A%20How%20Popular%20is%20Your%20Video%3F)].|Мир|4|LIKES|
+|Количество новых подписок / день / канал \[[18](https://medium.com/@jasonrbodie/average-youtube-channel-growth-rate-f6837584c9ac)]|Мир|1000|SUBS|
+|Средняя продолжительность видео (мин)\[[19](https://bloggingwizard.com/youtube-statistics/#:~:text=7.-,The%20average%20length%20of%20a%20YouTube%20video%20is%2011.7%20minutes,-According%20to%20Statista)]|Мир|11.7|DURATION|
+|Количество посещений страниц / день / пользователь \[[20](https://www.globalmediainsight.com/blog/youtube-users-statistics/#:~:text=An%20average%20YouTube%20visitor%20checks%20nearly%20nine%20pages%20per%20day.%C2%A0)]|Мир|9|VISITS_DAY_USER|
+|Средняя продолжительность посещения сайт (мин)\[[21](https://inclient.ru/youtube-stats/#:~:text=%D0%9F%D0%BE%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D0%BC%20Similarweb%20%D1%81%D1%80%D0%B5%D0%B4%D0%BD%D1%8F%D1%8F%20%D0%BF%D1%80%D0%BE%D0%B4%D0%BE%D0%BB%D0%B6%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D1%8C%20%D0%BF%D0%BE%D1%81%D0%B5%D1%89%D0%B5%D0%BD%D0%B8%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0%20youtube.com%20%D1%81%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BB%D1%8F%D0%B5%D1%82%2020%20%D0%BC%D0%B8%D0%BD%D1%83%D1%82%2016%20%D1%81%D0%B5%D0%BA%D1%83%D0%BD%D0%B4)]|Мир|20|VISIT_TIME|
 
 Некоторую метрику на российском рынке приблизительно можно рассчитать относительно мировой метрики
 - METRICS (rus) = METRICS (world) * (MAU / MAU)
@@ -132,7 +130,7 @@
 - **Видео**
 	- Во всем мире UPLOAD_DAY часов видео загружается на платформу каждый день. Значит, в России будет загружаться ```UPLOAD_DAY * K = 720 тыс. * 0.038 = 27_360 часов``` контента в день.
 	- Допустим, все видео имеют разрешения 1080p \[[20.1](https://osgamers.com/frequently-asked-questions/what-is-the-best-quality-for-youtube#:~:text=Statistics%20and%20research%20has%20shown%20that%20the%20amount%20people%20watching%20care%20about%20quality%20peaks%20at%201080p.%20There%20is%20no%20advantage%20as%20far%20as%20your%20viewers%20are%20concerned.) , [20.2](https://osgamers.com/frequently-asked-questions/what-is-the-best-quality-for-youtube#:~:text=The%20most%20common%20resolutions%20for%20Youtube%20videos%20are%201280%20x%20720p%20and%201920%20x%201080p)] с частотой кадров 30 fps в формате SDR. В хранилище хранятся все варианты разрешений для обеспечения адаптивного битрейта.
-		- 2160p (4K) - 40 Mbps \[[21](https://support.google.com/youtube/answer/1722171?hl=en#zippy=%2Cframe-rate%2Cbitrate%2Cvideo-codec-h%2Cvideo-resolution-and-aspect-ratio%2Ccolor-space:~:text=Recommended%20video%20bitrates%20for%20SDR%20uploads)]
+		- 2160p (4K) - 40 Mbps \[[22](https://support.google.com/youtube/answer/1722171?hl=en#zippy=%2Cframe-rate%2Cbitrate%2Cvideo-codec-h%2Cvideo-resolution-and-aspect-ratio%2Ccolor-space:~:text=Recommended%20video%20bitrates%20for%20SDR%20uploads)]
 		- 1440p (2K) - 16 Mbps
 		- **1080p - 8 Mbps** 
 		- 720p - 5 Mbps                                                 
