@@ -15,18 +15,19 @@
 1. **Просмотр** видео
 2. **Загрузка** видео
 3. **Комментирование, лайки, подписки** на канал
-4. **Рекомендации** на главной странице
+4. **Рекомендации** на главной странице и на странице видео
+5. **Авторизация**
 
 ### 1.3 Целевая аудитория
 - Местоположение - **Россия**
 - **Размер аудитории** на локальном рынке \[[1](https://mediascope.net/data/#internet)]
 	- месячный охват 95 млн. человек
 	- дневной охват 52 млн. человек
-- Среднее время просмотра в день - 85 мин \[[2](https://mediascope.net/upload/iblock/ee9/b91rtnqh1jf0zhalydi9jf125voo5o8e/медиапотребление.pdf)]
+- Среднее время просмотра в день - 85 мин \[[2](https://mediascope.net/upload/iblock/ee9/b91rtnqh1jf0zhalydi9jf125voo5o8e/медиапотребление.pdf)], хотя по миру это значение намного меньше \[[3](https://www.oberlo.com/statistics/average-time-spent-on-youtube)]
 - Некоторые факты об аудитории
-	- 15% доля YouTube в интернет-потреблении на локальном рынке (18% - доля видео в целом) \[[3](https://mediascope.net/upload/iblock/ee9/b91rtnqh1jf0zhalydi9jf125voo5o8e/медиапотребление.pdf)]
+	- 15% доля YouTube в интернет-потреблении на локальном рынке (18% - доля видео в целом) \[[4](https://mediascope.net/upload/iblock/ee9/b91rtnqh1jf0zhalydi9jf125voo5o8e/медиапотребление.pdf)]
 	- Средний возраст 25-34 лет
-	- 40% - доля женщин \[[4](https://bloggingwizard.com/youtube-statistics/#:~:text=60.59%25%20of%20YouTube%E2%80%99s%20audience%20is%20male)]
+	- 40% - доля женщин \[[5](https://bloggingwizard.com/youtube-statistics/#:~:text=60.59%25%20of%20YouTube%E2%80%99s%20audience%20is%20male)]
 
 ## 2. Расчет нагрузки<a name="2"></a>
 
@@ -34,23 +35,23 @@
 
 |Метрика|Аудитория|Значение|Обозначение|
 | ------------- | --- |-------------|--|
-|MAU (чел.)\[[5](https://mediascope.net/data/#internet)]|Мир|2500 млн.|MAU_WORLD|
-|MAU (чел.)\[[6](https://mediascope.net/data/#internet)]|Россия|95 млн.|MAU_RUS|
-|DAU (чел.)\[[7](https://mediascope.net/data/#internet)]|Россия|52 млн.|MAU_RUS|
-|Количество просмотров / месяц \[[8](https://www.globalmediainsight.com/blog/youtube-users-statistics/#:~:text=YouTube%20Views%20by%20Country)]|Россия|207 млрд.|VIEWS_MONTH|
-|Среднее время просмотра / день (мин)\[[9](https://inclient.ru/youtube-stats/#:~:text=%D0%92%20%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8%20YouTube%20%D1%81%D0%BC%D0%BE%D1%82%D1%80%D1%8F%D1%82%20%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%80%D0%BD%D0%BE%2086%20%D0%BC%D0%B8%D0%BD%D1%83%D1%82%20%D0%B2%20%D0%B4%D0%B5%D0%BD%D1%8C)]|Россия|86|VIEW_DURATION_DAY|
-|Загрузка видео / минута (час)\[[10](https://bloggingwizard.com/youtube-statistics/#:~:text=That%E2%80%99s%2030%2C000%20hours%20of%20video%20uploaded%20every%20hour%2C%20720%2C000%20uploaded%20every%20day%2C%205.04%20million%20uploaded%20every%20week%2C%2021.9%20million%20uploaded%20every%20month%20and%20262.8%20million%20uploaded%20every%20year.)] |Мир|500|UPLOAD_MINUTE|
-|Загрузка видео / час (час)\[[11](https://bloggingwizard.com/youtube-statistics/#:~:text=That%E2%80%99s%2030%2C000%20hours%20of%20video%20uploaded%20every%20hour%2C%20720%2C000%20uploaded%20every%20day%2C%205.04%20million%20uploaded%20every%20week%2C%2021.9%20million%20uploaded%20every%20month%20and%20262.8%20million%20uploaded%20every%20year.)] |Мир|30 тыс.|UPLOAD_HOUR|
-|Загрузка видео / день (час)\[[12](https://bloggingwizard.com/youtube-statistics/#:~:text=That%E2%80%99s%2030%2C000%20hours%20of%20video%20uploaded%20every%20hour%2C%20720%2C000%20uploaded%20every%20day%2C%205.04%20million%20uploaded%20every%20week%2C%2021.9%20million%20uploaded%20every%20month%20and%20262.8%20million%20uploaded%20every%20year.)] |Мир|720 тыс.|UPLOAD_DAY|
-|Загрузка видео / месяц (час)\[[13](https://bloggingwizard.com/youtube-statistics/#:~:text=That%E2%80%99s%2030%2C000%20hours%20of%20video%20uploaded%20every%20hour%2C%20720%2C000%20uploaded%20every%20day%2C%205.04%20million%20uploaded%20every%20week%2C%2021.9%20million%20uploaded%20every%20month%20and%20262.8%20million%20uploaded%20every%20year.)] |Мир|21.9 млн.|UPLOAD_MONTH|
-|Загрузка видео / год (час)\[[14](https://bloggingwizard.com/youtube-statistics/#:~:text=That%E2%80%99s%2030%2C000%20hours%20of%20video%20uploaded%20every%20hour%2C%20720%2C000%20uploaded%20every%20day%2C%205.04%20million%20uploaded%20every%20week%2C%2021.9%20million%20uploaded%20every%20month%20and%20262.8%20million%20uploaded%20every%20year.)] |Мир|263 млн.|UPLOAD_YEAR|
-|Передача видео / минуту (час)\[[15](https://www.wyzowl.com/youtube-stats/#:~:text=An%20average%20of%20694%2C000%20hours%20of%20video%20are%20streamed%20by%20YouTuber%20users%20each%20and%20every%20minute.%20This%20is%20even%20higher%20than%20Netflix%2C%20whose%20users%20stream%20452%2C000%20hours%20per%20minute.)] |Мир|694 тыс.|DOWNLOAD_MIN|
-|Количество комментариев / 1000 просмотров\[[16](https://tubularlabs.com/blog/3-metrics-youtube-success/#:~:text=Comments%20to%20Views%3A%20How%20High%20is%20Engagement%3F)]|Мир|5|COMMENTS|
-|Количество лайков / 100 просмотров\[[17](https://tubularlabs.com/blog/3-metrics-youtube-success/#:~:text=Likes%20to%20Views%3A%20How%20Popular%20is%20Your%20Video%3F)].|Мир|4|LIKES|
-|Количество новых подписок / день / канал \[[18](https://medium.com/@jasonrbodie/average-youtube-channel-growth-rate-f6837584c9ac)]|Мир|1000|SUBS|
-|Средняя продолжительность видео (мин)\[[19](https://bloggingwizard.com/youtube-statistics/#:~:text=7.-,The%20average%20length%20of%20a%20YouTube%20video%20is%2011.7%20minutes,-According%20to%20Statista)]|Мир|11.7|DURATION|
-|Количество посещений страниц / день / пользователь \[[20](https://www.globalmediainsight.com/blog/youtube-users-statistics/#:~:text=An%20average%20YouTube%20visitor%20checks%20nearly%20nine%20pages%20per%20day.%C2%A0)]|Мир|9|VISITS_DAY_USER|
-|Средняя продолжительность посещения сайт (мин)\[[21](https://inclient.ru/youtube-stats/#:~:text=%D0%9F%D0%BE%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D0%BC%20Similarweb%20%D1%81%D1%80%D0%B5%D0%B4%D0%BD%D1%8F%D1%8F%20%D0%BF%D1%80%D0%BE%D0%B4%D0%BE%D0%BB%D0%B6%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D1%8C%20%D0%BF%D0%BE%D1%81%D0%B5%D1%89%D0%B5%D0%BD%D0%B8%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0%20youtube.com%20%D1%81%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BB%D1%8F%D0%B5%D1%82%2020%20%D0%BC%D0%B8%D0%BD%D1%83%D1%82%2016%20%D1%81%D0%B5%D0%BA%D1%83%D0%BD%D0%B4)]|Мир|20|VISIT_TIME|
+|MAU (чел.)\[[6](https://mediascope.net/data/#internet)]|Мир|2500 млн.|MAU_WORLD|
+|MAU (чел.)\[[7](https://mediascope.net/data/#internet)]|Россия|95 млн.|MAU_RUS|
+|DAU (чел.)\[[8](https://mediascope.net/data/#internet)]|Россия|52 млн.|MAU_RUS|
+|Количество просмотров / месяц \[[9](https://www.globalmediainsight.com/blog/youtube-users-statistics/#:~:text=YouTube%20Views%20by%20Country)]|Россия|207 млрд.|VIEWS_MONTH|
+|Среднее время просмотра / день (мин)\[[10](https://inclient.ru/youtube-stats/#:~:text=%D0%92%20%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8%20YouTube%20%D1%81%D0%BC%D0%BE%D1%82%D1%80%D1%8F%D1%82%20%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%80%D0%BD%D0%BE%2086%20%D0%BC%D0%B8%D0%BD%D1%83%D1%82%20%D0%B2%20%D0%B4%D0%B5%D0%BD%D1%8C)]|Россия|86|VIEW_DURATION_DAY|
+|Загрузка видео / минута (час)\[[11](https://bloggingwizard.com/youtube-statistics/#:~:text=That%E2%80%99s%2030%2C000%20hours%20of%20video%20uploaded%20every%20hour%2C%20720%2C000%20uploaded%20every%20day%2C%205.04%20million%20uploaded%20every%20week%2C%2021.9%20million%20uploaded%20every%20month%20and%20262.8%20million%20uploaded%20every%20year.)] |Мир|500|UPLOAD_MINUTE|
+|Загрузка видео / час (час)\[[12](https://bloggingwizard.com/youtube-statistics/#:~:text=That%E2%80%99s%2030%2C000%20hours%20of%20video%20uploaded%20every%20hour%2C%20720%2C000%20uploaded%20every%20day%2C%205.04%20million%20uploaded%20every%20week%2C%2021.9%20million%20uploaded%20every%20month%20and%20262.8%20million%20uploaded%20every%20year.)] |Мир|30 тыс.|UPLOAD_HOUR|
+|Загрузка видео / день (час)\[[13](https://bloggingwizard.com/youtube-statistics/#:~:text=That%E2%80%99s%2030%2C000%20hours%20of%20video%20uploaded%20every%20hour%2C%20720%2C000%20uploaded%20every%20day%2C%205.04%20million%20uploaded%20every%20week%2C%2021.9%20million%20uploaded%20every%20month%20and%20262.8%20million%20uploaded%20every%20year.)] |Мир|720 тыс.|UPLOAD_DAY|
+|Загрузка видео / месяц (час)\[[14](https://bloggingwizard.com/youtube-statistics/#:~:text=That%E2%80%99s%2030%2C000%20hours%20of%20video%20uploaded%20every%20hour%2C%20720%2C000%20uploaded%20every%20day%2C%205.04%20million%20uploaded%20every%20week%2C%2021.9%20million%20uploaded%20every%20month%20and%20262.8%20million%20uploaded%20every%20year.)] |Мир|21.9 млн.|UPLOAD_MONTH|
+|Загрузка видео / год (час)\[[15](https://bloggingwizard.com/youtube-statistics/#:~:text=That%E2%80%99s%2030%2C000%20hours%20of%20video%20uploaded%20every%20hour%2C%20720%2C000%20uploaded%20every%20day%2C%205.04%20million%20uploaded%20every%20week%2C%2021.9%20million%20uploaded%20every%20month%20and%20262.8%20million%20uploaded%20every%20year.)] |Мир|263 млн.|UPLOAD_YEAR|
+|Передача видео / минуту (час)\[[16](https://www.wyzowl.com/youtube-stats/#:~:text=An%20average%20of%20694%2C000%20hours%20of%20video%20are%20streamed%20by%20YouTuber%20users%20each%20and%20every%20minute.%20This%20is%20even%20higher%20than%20Netflix%2C%20whose%20users%20stream%20452%2C000%20hours%20per%20minute.)] |Мир|694 тыс.|DOWNLOAD_MIN|
+|Количество комментариев / 1000 просмотров\[[17](https://tubularlabs.com/blog/3-metrics-youtube-success/#:~:text=Comments%20to%20Views%3A%20How%20High%20is%20Engagement%3F)]|Мир|5|COMMENTS|
+|Количество лайков / 100 просмотров\[[18](https://tubularlabs.com/blog/3-metrics-youtube-success/#:~:text=Likes%20to%20Views%3A%20How%20Popular%20is%20Your%20Video%3F)].|Мир|4|LIKES|
+|Количество новых подписок / день / канал \[[19](https://medium.com/@jasonrbodie/average-youtube-channel-growth-rate-f6837584c9ac)]|Мир|1000|SUBS|
+|Средняя продолжительность видео (мин)\[[20](https://bloggingwizard.com/youtube-statistics/#:~:text=7.-,The%20average%20length%20of%20a%20YouTube%20video%20is%2011.7%20minutes,-According%20to%20Statista)]|Мир|11.7|DURATION|
+|Количество посещений страниц / день / пользователь \[[21](https://www.globalmediainsight.com/blog/youtube-users-statistics/#:~:text=An%20average%20YouTube%20visitor%20checks%20nearly%20nine%20pages%20per%20day.%C2%A0)]|Мир|9|VISITS_DAY_USER|
+|Средняя продолжительность посещения сайта (мин)\[[22](https://inclient.ru/youtube-stats/#:~:text=%D0%9F%D0%BE%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D0%BC%20Similarweb%20%D1%81%D1%80%D0%B5%D0%B4%D0%BD%D1%8F%D1%8F%20%D0%BF%D1%80%D0%BE%D0%B4%D0%BE%D0%BB%D0%B6%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D1%8C%20%D0%BF%D0%BE%D1%81%D0%B5%D1%89%D0%B5%D0%BD%D0%B8%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0%20youtube.com%20%D1%81%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BB%D1%8F%D0%B5%D1%82%2020%20%D0%BC%D0%B8%D0%BD%D1%83%D1%82%2016%20%D1%81%D0%B5%D0%BA%D1%83%D0%BD%D0%B4)] \[[23](https://www.statista.com/statistics/1257254/youtubecom-time-spent-per-visit/#:~:text=In%20March%202021%2C%20users%20worldwide%20spent%20an%20average%20of%201777%20seconds%20(29%20minutes%20and%2037%20seconds))]|Мир|20|VISIT_TIME|
 
 Некоторую метрику на российском рынке приблизительно можно рассчитать относительно мировой метрики
 - METRICS (rus) = METRICS (world) * (MAU / MAU)
@@ -66,6 +67,7 @@
 |Просмотр видео|207 млрд.|
 |Показ рекомендаций|70 млрд.|
 |Добавление лайка|8.3 млрд.|
+|Посещение сервиса (проверка авторизации)|6.2 млрд.|
 |Подписка на канал|3.6 млрд.|
 |Лента подписок|2 млрд.|
 |Добавление комментария|1 млрд.|
@@ -89,7 +91,7 @@
 	- Каждое видео в среднем длится DURATION минут.
 	- Следовательно, 1.6 млн. видеороликов в месяц загружаются на платформу.  
 	- `(UPLOAD_MONTH * K * 60) мин / DURATION = (21_900_000 час * 0.038 * 60) мин / 11.7 мин = 4.3 млн видеороликов`
-- **Показ рекомендаций на главной странице** -  276 млрд. / мес.
+- **Показ рекомендаций на главной странице** - 70 млрд. / мес.
 	- В среднем, каждый пользователь в день посещает VISITS_DAY_USER страниц сервиса.
 	- Допустим, на каждые 3 посещения страницы видео приходится одно посещение главной страницы
 	- Тогда, общее количество посещений этих страниц, а, следовательно, и предложенных рекомендаций 276 млрд. 
@@ -97,6 +99,10 @@
 - **Лента подписок** -  2.07 млрд. / мес.
 	- Допустим, что на каждые 100 просмотров видео приходится 1 просмотр ленты подписок. 
 	- `VIEWS_MONTH * 1/100 = 207 * 1/100 = 2.07 млрд`
+- **Авторизация** - 6.24 млрд.
+	- При каждом пользовательском визите сервиса (при каждой новой вкладке браузера) клиентской стороне необходимо проверить авторизацию пользователя по id сессии.
+	- Допустим, что в день пользователь заходит на сервис 4 раза (`VIEW_DURATION_DAY / VISIT_TIME = 86 / 20 = 4`)
+	- Тогда `DAU_RUS * 4 = 52 млн * 4 = 208 млн.` запросов на проверку авторизации в день. Значит, `208 млн. * 30 = 6.24 млрд.` запросов на авторизацию в месяц.
 
 ## 2.2 Технические метрики
 
@@ -104,18 +110,8 @@
 
 |Хранилище |Стартовый размер|Увеличение/год|
 | ------------- |-------------|-------------|
-|Видео (Пб) |-|144|
-|Данные пользователя (Пб) |3.1|-|
-
-|Тип запроса |RPS|
-| ------------- |-------------|
-|Станица видео|1 млн|
-|Главная страница|729 тыс|
-|Добавление лайка|83 тыс|
-|Подписка на канал|1.4 тыс|
-|Лента подписок|770|
-|Добавление комментария|400|
-|Загрузка видеоролика на канал|5|
+|Видео (Пб) |144|144|
+|Данные пользователя (Пб) |3.1|1.5|
 
 |Сетевой трафик |Потребление|
 | ------------- |-------------|
@@ -125,12 +121,30 @@
 |Средний исходящий трафик (Пб / сутки) |158 (133 + 25)|
 |Пиковый исходящий трафик (Тбит / с)|30|
 
+|Тип запроса |RPS (Статика)|
+| ------------- |-------------|
+|Станица видео|2.5 млн|
+|Главная страница|1351 тыс|
+|Лента подписок|38 тыс.|
+|Загрузка видеоролика на канал|17|
+
+|Тип запроса |RPS (API)|
+| ------------- |-------------|
+|Станица видео|307 тыс|
+|Главная страница|54 тыс|
+|Добавление лайка|6.4 тыс|
+|Проверка авторизации|4.8 тыс|
+|Подписка на канал|2.8 тыс|
+|Лента подписок|1.5 тыс|
+|Добавление комментария|800|
+|Загрузка видеоролика на канал|4|
+
 ### 2.2.2 Расчет технических метрик
 #### 2.2.2.1 Хранилище
 - **Видео**
 	- Во всем мире UPLOAD_DAY часов видео загружается на платформу каждый день. Значит, в России будет загружаться ```UPLOAD_DAY * K = 720 тыс. * 0.038 = 27_360 часов``` контента в день.
-	- Допустим, все видео имеют разрешения 1080p \[[20.1](https://osgamers.com/frequently-asked-questions/what-is-the-best-quality-for-youtube#:~:text=Statistics%20and%20research%20has%20shown%20that%20the%20amount%20people%20watching%20care%20about%20quality%20peaks%20at%201080p.%20There%20is%20no%20advantage%20as%20far%20as%20your%20viewers%20are%20concerned.) , [20.2](https://osgamers.com/frequently-asked-questions/what-is-the-best-quality-for-youtube#:~:text=The%20most%20common%20resolutions%20for%20Youtube%20videos%20are%201280%20x%20720p%20and%201920%20x%201080p)] с частотой кадров 30 fps в формате SDR. В хранилище хранятся все варианты разрешений для обеспечения адаптивного битрейта.
-		- 2160p (4K) - 40 Mbps \[[22](https://support.google.com/youtube/answer/1722171?hl=en#zippy=%2Cframe-rate%2Cbitrate%2Cvideo-codec-h%2Cvideo-resolution-and-aspect-ratio%2Ccolor-space:~:text=Recommended%20video%20bitrates%20for%20SDR%20uploads)]
+	- Допустим, все видео имеют разрешения 1080p \[[24](https://osgamers.com/frequently-asked-questions/what-is-the-best-quality-for-youtube#:~:text=Statistics%20and%20research%20has%20shown%20that%20the%20amount%20people%20watching%20care%20about%20quality%20peaks%20at%201080p.%20There%20is%20no%20advantage%20as%20far%20as%20your%20viewers%20are%20concerned.)] \[[25](https://osgamers.com/frequently-asked-questions/what-is-the-best-quality-for-youtube#:~:text=The%20most%20common%20resolutions%20for%20Youtube%20videos%20are%201280%20x%20720p%20and%201920%20x%201080p)] с частотой кадров 30 fps в формате SDR. В хранилище хранятся все варианты разрешений для обеспечения адаптивного битрейта.
+		- 2160p (4K) - 40 Mbps \[[26](https://support.google.com/youtube/answer/1722171?hl=en#zippy=%2Cframe-rate%2Cbitrate%2Cvideo-codec-h%2Cvideo-resolution-and-aspect-ratio%2Ccolor-space:~:text=Recommended%20video%20bitrates%20for%20SDR%20uploads)]
 		- 1440p (2K) - 16 Mbps
 		- **1080p - 8 Mbps** 
 		- 720p - 5 Mbps                                                 
@@ -139,6 +153,7 @@
 	- ```(27_360 час * 60 * 60) сек * (8 + 5 + 2.5 + 1) Mpbs / 8 / 1024 = 198.4 тыс. Гб```
 	- В день 95 млн. человек загружают 198.4 тыс. ГБ видео. Значит, каждый год требуется `198_400 * 365 = 72 Пб` памяти для хранения видео (не включая резервные копии)
 	- Для обеспечения надежности хранения данных в S3 хранилище допустим, что каждое видео имеет 1 резервную копию (хранение разных версий файлов не учитываем). Таким образом, **в год необходимо резервировать хранилище размером 144 Пб**. 
+	- Пусть стартовый объем хранилища на первый год будет таким же.
 - **Пользовательские данные**
 	 - Допустим, остальные пользовательские данные имеют следующий размер
 		 - Данные профиля - 1 Мб (описание, данные о подписках, о лайках, комментарии)
@@ -147,7 +162,8 @@
 		 - Статистика канала - 2 Мб
 	- 30 Мб с учетом резервных копий (x2) необходимо на каждого пользователя. 
 	- MAU_RUS - 95 млн, пользователей интернета в России - 130 млн.
-	- Допустим, что общее количество аккаунтов 110 млн, значит, стартовый размер хранилища `30 Мб * 110 млн = 3.1 Пб` 
+	- Допустим, что общее количество аккаунтов 110 млн, значит, **стартовый размер хранилища** `30 Мб * 110 млн =` **3.1 Пб** 
+	- Пусть увеличение хранилища в год требует двое меньше объема, т.к. многие данные фиксируются на момент регистрации пользователя.  
 
 #### 2.2.2.2 Потребление трафика
 - **Среднее потребление трафика**
@@ -168,49 +184,60 @@
 		- В день загружается UPLOAD_DAY часов видео в день. 
 			- `UPLOAD_DAY * 60 * 60 * 8 Mbps / 8 /  1024 / 1024 / 1024 = 720 тыс. * 60 * 60 * 8 Mbps / 8 / 1024 / 1024 / 1024 = 2.4 Пб / сутки`
 - **Пиковое потребление трафика**
-	- Допустим, что пиковое (дневное) потребление в 2 раза больше среднего \[[21, слайд 14](https://cloud.mail.ru/public/8Mau/tKmAN3kqb)], получим `(133 Пб/сутки + 25 Пб/сутки) * / 1024 Тб * 2 / 86400 * 8 = 30 Тбит / c`
+	- Допустим, что пиковое (дневное) потребление в 2 раза больше среднего \[[27](https://cloud.mail.ru/public/8Mau/tKmAN3kqb)] (слайд 14), получим `(133 Пб/сутки + 25 Пб/сутки) * / 1024 Тб * 2 / 86400 * 8 = 30 Тбит / c`
 
 #### 2.2.2.3 RPS по типам запросов
 
 - Количество подзапросов для каждого действия пользователя
-	- **Страница видео** (13 запросов)
+	- **Страница видео** (18 запросов)
 		- Статика
 			- Первый видеочанк - 1 запрос
 			- Превью - 10 запросов 
 			- html, js, css - 5 запросов
 		- Динамика
-			- Проверка авторизации - 1 запрос
 			- Комментарии, кол-во лайков, просмотров, описание видео - 1 запрос
 			- Рекомендации - 1 запрос
-	- **Главная страница** (27 запросов)
+	- **Главная страница** (26 запросов)
 		- Статика
 			- Превью - 20 запросов 
 			- html, js, css - 5 запросов
 		- Динамика
-			- Проверка авторизации - 1 запрос
 			- Рекомендации - 1 запрос
 	- **Лента подписок** (26 запросов)
 		- Статика
 			- Превью - 20 запросов 
 			- html, js, css - 5 запросов
 		- Динамика
-			- Проверка авторизации - 1 запрос
-	- **Добавление лайка** (1 запрос)
-	- **Подписка на канал** (1 запрос)
-	- **Добавление комментария** (1 запрос)
-	- **Загрузка видеоролика на канал** (3 запроса) 
+			- Список подписок - 1 запрос
+	- **Добавление лайка** (Динамика - 1 запрос)
+	- **Подписка на канал** (Динамика - 1 запрос)
+	- **Добавление комментария** (Динамика - 1 запроса)
+	- **Загрузка видеоролика на канал** (6 запросов)
+		- Статика
+			- html, js, css - 5 запросов
+		- Динамика
+			- Отправка параметров загрузки видео - 1 запрос
+	- **Проверка авторизации** (Динамика - 1 запрос)
 
 > Увеличим каждое значение RPS в 2 раза для отказоустойчивости в случае пиковых нагрузок
 
-|Тип запроса |RPS|
+|Тип запроса |RPS (Статика)|
 | ------------- |-------------|
-|Станица видео|`207 млрд / 30 / 86400 * 13 * 2= 2 млн`|
-|Главная страница|`70 млрд / 30 / 86400 * 27 * 2 = 1460 тыс`|
-|Добавление лайка|`8.3 млрд / 30 / 86400 * 26 * 2 = 166 тыс`|
+|Станица видео|`207 млрд / 30 / 86400 * 16 * 2 = 2.5 млн`|
+|Главная страница|`70 млрд / 30 / 86400 * 27 * 2 = 1351 тыс`|
+|Лента подписок|`2 млрд / 30 / 86400 * 25 * 2 = 38 тыс.`|
+|Загрузка видеоролика на канал|`4.3 млн / 30 / 86400 * 5 * 2 = 17`|
+
+|Тип запроса |RPS (API)|
+| ------------- |-------------|
+|Станица видео|`207 млрд / 30 / 86400 * 2 * 2 = 307 тыс`|
+|Главная страница|`70 млрд / 30 / 86400 * 1 * 2 = 54 тыс`|
+|Лента подписок|`2 млрд / 30 / 86400 * 1 * 2 = 1.5 тыс.`|
+|Добавление лайка|`8.3 млрд / 30 / 86400 * 1 * 2 = 6.4 тыс`|
+|Проверка авторизации|`6.2 млрд / 30 / 86400 * 1 * 2 = 4.8 тыс`|
 |Подписка на канал|`3.6 млрд / 30 / 86400 * 1 * 2 = 2.8 тыс`|
-|Лента подписок|`2 млрд / 30 / 86400 * 1 * 2 = 1540`|
 |Добавление комментария|`1 млрд / 30 / 86400 * 1 * 2 = 800`|
-|Загрузка видеоролика на канал|`4.3 млн / 30 / 86400 * 3 * 2 = 10`|
+|Загрузка видеоролика на канал|`4.3 млн / 30 / 86400 * 1 * 2 = 4`|
 
 ## 2. Логическая схема <a name="2"></a>
 
