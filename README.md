@@ -252,17 +252,22 @@
 
 ### 3.1 Схема глобальной балансировки до датацентров
 
-Так как целевая аудитория - аудитория локального рынка.
+Схема глобальной балансировки включает следующее:
+1. Кэши в локальных ISP.
+2. CDN подключены к крупным IX.
+3. GeoDNS выбирает ближайшую группу CDN.
+4. BGP Anycast до ближайшего CDN.
 
-Схема балансировки включает следующее
-- Предложение всем локальным **ISP** использовать специальные **Storage сервера сервиса YouTube**\[[29](https://www.youtube.com/watch?v=g5v2-H-sabM&t=537s)], тем самым уменьшая трафик с внешних линков ISP.
-- Сеть **CDN**, присоединенная к крупным точкам обмена трафика **Internet Exchange** (Cloud-IX объединяет в себе крупные Российские и не только IX \[[30](https://hww.ru/2021/03/tochki-obmena-trafikom-ili-kak-ustroen-internet-v-rossii/#:~:text=SDN%2C%20Xelent%2C%20Infobox.-,Cloud%2DIX,-%D0%92%202012%20%D0%B3)])
-- **GeoDNS** сервера, отвечающие за домен сервиса, определяют локацию пользователя и возвращают IP адрес, за которым находится несколько физических CDN или ЦОДов.
-- Каждый CDN в рамках одной географической зоны анонсирует в сеть Интернет один и тот же IP адрес для достижения балансировки **BGP Anycast** (Routing). Преимущества и недостатки \[[31](https://www.youtube.com/watch?v=9VVzu87lVbE&list=LL&index=12&t=1240s)] \[[32](https://www.youtube.com/watch?v=LPCbKzhvAGc)].
+
+*Замечания:*
+1. Предложение всем локальным **ISP** использовать специальные **Storage сервера сервиса YouTube**\[[29](https://www.youtube.com/watch?v=g5v2-H-sabM&t=537s)] (уменьшение трафика с внешних линков ISP, ускорение доставки контента пользователям).
+2. Сеть **CDN** подлкючена к крупным точкам обмена трафика **Internet Exchange** (Cloud-IX объединяет в себе крупные Российские и не только IX \[[30](https://hww.ru/2021/03/tochki-obmena-trafikom-ili-kak-ustroen-internet-v-rossii/#:~:text=SDN%2C%20Xelent%2C%20Infobox.-,Cloud%2DIX,-%D0%92%202012%20%D0%B3)])
+3. **GeoDNS** сервера определяют локацию пользователя и возвращают IP адрес, за которым находится группа CDN или ЦОД.
+4. Узлы сети в России распределены неравномерно \[[1](https://telecomlife.ru/magistralnaya-set/)], поэтому, если назначить всем CDN один IP адрес, **BGP Anycast** может выбрать оптимальный маршрут с точки зрения топологии (метрика - количество хопов), но географически неоптимальный \[[1](https://youtu.be/LPCbKzhvAGc?t=1265)]. Необходимо кластеризовать сервера CDN на локальные группы и назначить каждой группе один IP адрес. Маршрут до ближайшего к пользователю CDN в рамках группы будет выбран BGP роутером. Текущая конфигурация называется "Региональный Anycast" \[[1](https://www.youtube.com/watch?v=LPCbKzhvAGc&t=1370s)]. Преимущества и недостатки BGP Anycast \[[31](https://www.youtube.com/watch?v=9VVzu87lVbE&list=LL&index=12&t=1240s)].
 
 ### 3.2 Физическое расположение датацентров
 
-- Наибольшая плотность населения в России приходится на западную и юго-западную часть \[[33](https://www.statdata.ru/karta/plotnost-naseleniya-rossii)]. 
+- Наибольшая плотность населения России приходится на западную и юго-западную часть \[[33](https://www.statdata.ru/karta/plotnost-naseleniya-rossii)]. 
 - Арендуем 4 ЦОДа в следующих городах: в Москве, в Санкт-Петербурге, в Екатеринбурге, в Красноярске (расположение ЦОДов в России \[[34](https://yandex.ru/maps/?display-text=Дата-центры&ll=42.072758%2C49.349507&mode=search&sctx=ZAAAAAgBEAAaKAoSCQiPNo5Y4FhAEUsgJXZt2U5AEhIJYJD0aZV0ZUAR9wX0wp1ZREAiBgABAgMEBSgKOABAkE5IAWIScG9pbnRfY29udGV4dF92Mj0xagJydZ0BzcxMPaABAKgBAL0B4DucO8IBMOO21I%2BKB8OQmYjwAfD6p5jyAvLMr6q2Aqi8qOj3BeP4xfGAAdPYgcuVBZG31ZugBeoBAPIBAPgBAIICGmNhdGVnb3J5X2lkOigxNzE2NDcwNDgzNDUpigIMMTcxNjQ3MDQ4MzQ1kgIAmgIMZGVza3RvcC1tYXBzqgIzMTkzNzMyNDc4MjQyLDIyMjI1ODM2NTUyMywyMDcyNDkzNzMyOTgsMjE2NjE4NTAzODAx&sll=42.072758%2C49.349507&sspn=18.673879%2C7.829843&text=category_id%3A%28171647048345%29&z=5.81)]\[[35](https://www.datacentermap.com/russia/)])
 - Сеть CDN будет состоять из 100 серверов, расположенных по всей стране. 
  ![](img/Pasted%20image%2020230924185610.png)
