@@ -3,7 +3,7 @@
 ## Содержание
 * ### [1. Тема, целевая аудитория](#1)
 * ### [2. Расчет нагрузки](#2)
-* ### [3. Логическая схема](#3)
+* ### [3. Глобальная балансировка нагрузки](#3)
 
 ## 1. Тема и целевая аудитория<a name="1"></a>
 
@@ -110,7 +110,7 @@
 
 |Хранилище |Стартовый размер (Пб)|Увеличение (Пб/год)|
 | ------------- |-------------|-------------|
-|Видео |540|540|
+|Видео |540|540\[[24](https://youtubeprofi.info/raspolozhenie-i-kolichestvo-serverov-youtube/#:~:text=%D0%92%202016%20%D0%B3.%20%D1%83%20YouTube%20%D0%B1%D1%8B%D0%BB%D0%BE%201%20%D0%9F%D0%91%20(1%20000%20%D0%A2%D0%91)%20%D0%B2%20%D0%B4%D0%B5%D0%BD%D1%8C%20%D0%BD%D0%BE%D0%B2%D0%BE%D0%B3%D0%BE%20%D0%BA%D0%BE%D0%BD%D1%82%D0%B5%D0%BD%D1%82%D0%B0%2C%20%D0%B7%D0%B0%D0%B3%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BD%D0%B0%20%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D1%8B.)]|
 |Данные пользователя |5|2.5|
 
 |Сетевой трафик |Потребление|
@@ -145,8 +145,8 @@
 #### 2.2.2.1 Хранилище
 - **Видео**
 	- Во всем мире UPLOAD_DAY часов видео загружается на платформу каждый день. Значит, в России будет загружаться ```UPLOAD_DAY * K = 720 тыс. * 0.038 = 27_360 часов``` контента в день.
-	- Допустим, все видео имеют разрешения 1080p \[[24](https://osgamers.com/frequently-asked-questions/what-is-the-best-quality-for-youtube#:~:text=Statistics%20and%20research%20has%20shown%20that%20the%20amount%20people%20watching%20care%20about%20quality%20peaks%20at%201080p.%20There%20is%20no%20advantage%20as%20far%20as%20your%20viewers%20are%20concerned.)] \[[25](https://osgamers.com/frequently-asked-questions/what-is-the-best-quality-for-youtube#:~:text=The%20most%20common%20resolutions%20for%20Youtube%20videos%20are%201280%20x%20720p%20and%201920%20x%201080p)] с частотой кадров 30 fps в формате SDR. В хранилище хранятся все варианты разрешений для обеспечения адаптивного битрейта.
-		- 2160p (4K) - 40 Mbps \[[26](https://support.google.com/youtube/answer/1722171?hl=en#zippy=%2Cframe-rate%2Cbitrate%2Cvideo-codec-h%2Cvideo-resolution-and-aspect-ratio%2Ccolor-space:~:text=Recommended%20video%20bitrates%20for%20SDR%20uploads)]
+	- Допустим, все видео имеют разрешения 1080p \[[25](https://osgamers.com/frequently-asked-questions/what-is-the-best-quality-for-youtube#:~:text=Statistics%20and%20research%20has%20shown%20that%20the%20amount%20people%20watching%20care%20about%20quality%20peaks%20at%201080p.%20There%20is%20no%20advantage%20as%20far%20as%20your%20viewers%20are%20concerned.)] \[[26](https://osgamers.com/frequently-asked-questions/what-is-the-best-quality-for-youtube#:~:text=The%20most%20common%20resolutions%20for%20Youtube%20videos%20are%201280%20x%20720p%20and%201920%20x%201080p)] с частотой кадров 30 fps в формате SDR. В хранилище хранятся все варианты разрешений для обеспечения адаптивного битрейта.
+		- 2160p (4K) - 40 Mbps \[[27](https://support.google.com/youtube/answer/1722171?hl=en#zippy=%2Cframe-rate%2Cbitrate%2Cvideo-codec-h%2Cvideo-resolution-and-aspect-ratio%2Ccolor-space:~:text=Recommended%20video%20bitrates%20for%20SDR%20uploads)]
 		- 1440p (2K) - 16 Mbps
 		- **1080p - 8 Mbps** 
 		- 720p - 5 Mbps                                                 
@@ -188,7 +188,7 @@
 			- `UPLOAD_DAY * 60 * 60 * 8 Mbps / 8 /  1024 / 1024 / 1024 = 720 тыс. * 60 * 60 * 8 Mbps / 8 / 1024 / 1024 / 1024 = 2.4 Пб / сутки`
 - **Пиковое использование трафика (в секунду)**
 	- **Отдача видео (download)** - 44 Тбит / c 
-		- Допустим, что пиковое (дневное) потребление в 1.8 раза больше среднего \[[27](https://cloud.mail.ru/public/8Mau/tKmAN3kqb)] (слайд 14), получим `133 Пб/сутки * 1024 Тб * 1.8 / 86400 * 8 = 22 Тбит / c`
+		- Допустим, что пиковое (дневное) потребление в 1.8 раза больше среднего \[[28](https://cloud.mail.ru/public/8Mau/tKmAN3kqb)] (слайд 14), получим `133 Пб/сутки * 1024 Тб * 1.8 / 86400 * 8 = 22 Тбит / c`
 		- Также учтем некоторый **запас** по потреблению трафика - x2. Таким образом, потребление **44 Тбит/c**. 
 	- **Общее пиковое потребление (видео и страницы)** - 54 Тбит / c 
 		-  `(133 Пб/сутки + 25 Пб/сутки) * 1024 Тб * 1.8 / 86400 * 8 * 2 = 54 Тбит / c`
@@ -248,5 +248,22 @@
 |Добавление комментария|`1 млрд / 30 / 86400 * 1 * 2 = 800`|
 |Загрузка видеоролика на канал|`4.3 млн / 30 / 86400 * 1 * 2 = 4`|
 
-## 2. Логическая схема <a name="2"></a>
+## 3. Глобальная балансировка нагрузки <a name="3"></a>
 
+### 3.1 Схема глобальной балансировки до датацентров
+
+Так как целевая аудитория - аудитория локального рынка.
+
+Схема балансировки включает следующее
+- Предложение всем локальным **ISP** использовать специальные **Storage сервера сервиса YouTube**\[[29](https://www.youtube.com/watch?v=g5v2-H-sabM&t=537s)], тем самым уменьшая трафик с внешних линков ISP.
+- Сеть **CDN**, присоединенная к крупным точкам обмена трафика **Internet Exchange** (Cloud-IX объединяет в себе крупные Российские и не только IX \[[30](https://hww.ru/2021/03/tochki-obmena-trafikom-ili-kak-ustroen-internet-v-rossii/#:~:text=SDN%2C%20Xelent%2C%20Infobox.-,Cloud%2DIX,-%D0%92%202012%20%D0%B3)])
+- **GeoDNS** сервера, отвечающие за домен сервиса, определяют локацию пользователя и возвращают IP адрес, за которым находится несколько физических CDN или ЦОДов.
+- Каждый CDN в рамках одной географической зоны анонсирует в сеть Интернет один и тот же IP адрес для достижения балансировки **BGP Anycast** (Routing). Преимущества и недостатки \[[31](https://www.youtube.com/watch?v=9VVzu87lVbE&list=LL&index=12&t=1240s)] \[[32](https://www.youtube.com/watch?v=LPCbKzhvAGc)].
+
+### 3.2 Физическое расположение датацентров
+
+- Наибольшая плотность населения в России приходится на западную и юго-западную часть \[[33](https://www.statdata.ru/karta/plotnost-naseleniya-rossii)]. 
+- Арендуем 4 ЦОДа в следующих городах: в Москве, в Санкт-Петербурге, в Екатеринбурге, в Красноярске (расположение ЦОДов в России \[[34](https://yandex.ru/maps/?display-text=Дата-центры&ll=42.072758%2C49.349507&mode=search&sctx=ZAAAAAgBEAAaKAoSCQiPNo5Y4FhAEUsgJXZt2U5AEhIJYJD0aZV0ZUAR9wX0wp1ZREAiBgABAgMEBSgKOABAkE5IAWIScG9pbnRfY29udGV4dF92Mj0xagJydZ0BzcxMPaABAKgBAL0B4DucO8IBMOO21I%2BKB8OQmYjwAfD6p5jyAvLMr6q2Aqi8qOj3BeP4xfGAAdPYgcuVBZG31ZugBeoBAPIBAPgBAIICGmNhdGVnb3J5X2lkOigxNzE2NDcwNDgzNDUpigIMMTcxNjQ3MDQ4MzQ1kgIAmgIMZGVza3RvcC1tYXBzqgIzMTkzNzMyNDc4MjQyLDIyMjI1ODM2NTUyMywyMDcyNDkzNzMyOTgsMjE2NjE4NTAzODAx&sll=42.072758%2C49.349507&sspn=18.673879%2C7.829843&text=category_id%3A%28171647048345%29&z=5.81)]\[[35](https://www.datacentermap.com/russia/)])
+- Сеть CDN будет состоять из 100 серверов, расположенных по всей стране. 
+ ![](img/Pasted%20image%2020230924185610.png)
+ > VK имеет 3 ЦОДа в Москве, в Санкт-Петербурге и Екатеринбурге \[[36](https://uchet-jkh.ru/i/gde-naxodyatsya-servera-vkontakte/#:~:text=%D0%A1%D0%B5%D0%B9%D1%87%D0%B0%D1%81%20%D0%92%D0%9A%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D0%B5%20%D0%B8%D0%BC%D0%B5%D0%B5%D1%82%20%D0%BD%D0%B5%D1%81%D0%BA%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE%20%D0%BA%D1%80%D1%83%D0%BF%D0%BD%D1%8B%D1%85%20%D1%86%D0%B5%D0%BD%D1%82%D1%80%D0%BE%D0%B2%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B8%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85)], а также сеть CDN, состоящую из 100 серверов \[[37](https://habr.com/ru/news/731714/#:~:text=%D0%9F%D0%BE%20%D0%B8%D1%85%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D0%BC%2C%20VK%20%D1%83%D0%B6%D0%B5%20%D0%BD%D0%B5%D1%81%D0%BA%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE%20%D0%BB%D0%B5%D1%82%20%D1%80%D0%B0%D0%B7%D0%B2%D0%B8%D0%B2%D0%B0%D0%B5%D1%82%20%D1%81%D0%B2%D0%BE%D1%8E%20CDN%2D%D1%81%D0%B5%D1%82%D1%8C%2C%20%D0%B0%20%D0%B2%20%D1%8D%D1%82%D0%BE%D0%BC%20%D0%B3%D0%BE%D0%B4%D1%83%20%D0%BA%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D1%8F%20%D1%80%D0%B5%D1%88%D0%B8%D0%BB%D0%B0%20%D1%83%D0%B2%D0%B5%D0%BB%D0%B8%D1%87%D0%B8%D1%82%D1%8C%20%D0%B5%D1%91%20%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%80%D0%BD%D0%BE%20%D0%B2%D0%B4%D0%B2%D0%BE%D0%B5%20%D0%B1%D0%BE%D0%BB%D0%B5%D0%B5%20%D1%87%D0%B5%D0%BC%20%D1%81%D0%BE%20100%20CDN%2D%D1%83%D0%B7%D0%BB%D0%BE%D0%B2%2C%20%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D1%8B%D0%B5%20%D1%81%D0%B5%D0%B9%D1%87%D0%B0%D1%81%20%D0%B5%D1%81%D1%82%D1%8C%20%D1%83%20VK%20%D0%BF%D0%BE%20%D0%B2%D1%81%D0%B5%D0%B9%20%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B5.)]. 
