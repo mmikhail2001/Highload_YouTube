@@ -4,6 +4,7 @@
 * ### [1. Тема, целевая аудитория](#1)
 * ### [2. Расчет нагрузки](#2)
 * ### [3. Глобальная балансировка нагрузки](#3)
+* ### [4. Локальная балансировка нагрузки](#4)
 
 ## 1. Тема и целевая аудитория<a name="1"></a>
 
@@ -257,19 +258,46 @@
 2. CDN подключены к крупным IX.
 3. GeoDNS выбирает ближайшую группу CDN.
 4. BGP Anycast до ближайшего CDN.
+5. CDN кэширует статику и ускоряет динамику с ЦОДов
 
 
-*Замечания:*
+*Пояснения:*
 1. Предложение всем локальным **ISP** использовать специальные **Storage сервера сервиса YouTube**\[[29](https://www.youtube.com/watch?v=g5v2-H-sabM&t=537s)] (уменьшение трафика с внешних линков ISP, ускорение доставки контента пользователям).
-2. Сеть **CDN** подлкючена к крупным точкам обмена трафика **Internet Exchange** (Cloud-IX объединяет в себе крупные Российские и не только IX \[[30](https://hww.ru/2021/03/tochki-obmena-trafikom-ili-kak-ustroen-internet-v-rossii/#:~:text=SDN%2C%20Xelent%2C%20Infobox.-,Cloud%2DIX,-%D0%92%202012%20%D0%B3)])
-3. **GeoDNS** сервера определяют локацию пользователя и возвращают IP адрес, за которым находится группа CDN или ЦОД.
+2. Сеть **CDN** подключена к крупным точкам обмена трафика **Internet Exchange** (Cloud-IX объединяет в себе крупные Российские и не только IX \[[30](https://hww.ru/2021/03/tochki-obmena-trafikom-ili-kak-ustroen-internet-v-rossii/#:~:text=SDN%2C%20Xelent%2C%20Infobox.-,Cloud%2DIX,-%D0%92%202012%20%D0%B3)])
+3. **GeoDNS** сервера определяют локацию пользователя и возвращают IP адрес, за которым находится группа CDN. CDN, в свою очередь, знают об адресах ЦОДов. 
 4. Узлы сети в России распределены неравномерно \[[31](https://telecomlife.ru/magistralnaya-set/)], поэтому, если назначить всем CDN один IP адрес, **BGP Anycast** может выбрать оптимальный маршрут с точки зрения топологии (метрика - количество хопов), но географически неоптимальный \[[32](https://youtu.be/LPCbKzhvAGc?t=1265)]. Необходимо кластеризовать сервера CDN на локальные группы и назначить каждой группе один IP адрес. Маршрут до ближайшего к пользователю CDN в рамках группы будет выбран BGP роутером. Текущая конфигурация называется "Региональный Anycast" \[[33](https://www.youtube.com/watch?v=LPCbKzhvAGc&t=1370s)]. Преимущества и недостатки BGP Anycast \[[34](https://www.youtube.com/watch?v=9VVzu87lVbE&list=LL&index=12&t=1240s)].
+5. CDN, близкий к пользователю сервер, держит с граничными маршрутизаторами ЦОДов постоянные "прогретые" соединения (увеличенное окно передачи) для ускорения доставки динамического контента и статики. Статика кэшируется на CDN.  
 
 ### 3.2 Физическое расположение датацентров
 
 - Наибольшая плотность населения России приходится на западную и юго-западную часть \[[35](https://www.statdata.ru/karta/plotnost-naseleniya-rossii)]. 
-- Арендуем 4 ЦОДа в следующих городах: в Москве, в Санкт-Петербурге, в Екатеринбурге, в Красноярске (расположение ЦОДов в России \[[36](https://yandex.ru/maps/?display-text=Дата-центры&ll=42.072758%2C49.349507&mode=search&sctx=ZAAAAAgBEAAaKAoSCQiPNo5Y4FhAEUsgJXZt2U5AEhIJYJD0aZV0ZUAR9wX0wp1ZREAiBgABAgMEBSgKOABAkE5IAWIScG9pbnRfY29udGV4dF92Mj0xagJydZ0BzcxMPaABAKgBAL0B4DucO8IBMOO21I%2BKB8OQmYjwAfD6p5jyAvLMr6q2Aqi8qOj3BeP4xfGAAdPYgcuVBZG31ZugBeoBAPIBAPgBAIICGmNhdGVnb3J5X2lkOigxNzE2NDcwNDgzNDUpigIMMTcxNjQ3MDQ4MzQ1kgIAmgIMZGVza3RvcC1tYXBzqgIzMTkzNzMyNDc4MjQyLDIyMjI1ODM2NTUyMywyMDcyNDkzNzMyOTgsMjE2NjE4NTAzODAx&sll=42.072758%2C49.349507&sspn=18.673879%2C7.829843&text=category_id%3A%28171647048345%29&z=5.81)]\[[37](https://www.datacentermap.com/russia/)])
+- Расположим сервера в следующих городах: в Москве в двух зонах доступности и в Новосибирске (расположение ЦОДов в России \[[36](https://yandex.ru/maps/?display-text=Дата-центры&ll=42.072758%2C49.349507&mode=search&sctx=ZAAAAAgBEAAaKAoSCQiPNo5Y4FhAEUsgJXZt2U5AEhIJYJD0aZV0ZUAR9wX0wp1ZREAiBgABAgMEBSgKOABAkE5IAWIScG9pbnRfY29udGV4dF92Mj0xagJydZ0BzcxMPaABAKgBAL0B4DucO8IBMOO21I%2BKB8OQmYjwAfD6p5jyAvLMr6q2Aqi8qOj3BeP4xfGAAdPYgcuVBZG31ZugBeoBAPIBAPgBAIICGmNhdGVnb3J5X2lkOigxNzE2NDcwNDgzNDUpigIMMTcxNjQ3MDQ4MzQ1kgIAmgIMZGVza3RvcC1tYXBzqgIzMTkzNzMyNDc4MjQyLDIyMjI1ODM2NTUyMywyMDcyNDkzNzMyOTgsMjE2NjE4NTAzODAx&sll=42.072758%2C49.349507&sspn=18.673879%2C7.829843&text=category_id%3A%28171647048345%29&z=5.81)]\[[37](https://www.datacentermap.com/russia/)])
 - Сеть CDN будет состоять из 100 серверов, расположенных по всей стране. 
- ![](img/Pasted%20image%2020230924185610.png)
+- Сервера можно арендовать в ЦОДах существующих компаних, например, Selectel \[[1](https://docs.selectel.ru/control-panel-actions/selectel-infrastructure/#инфраструктура-selectel)] имеет 2 AZ в Москве и 1 AZ в Новосибирске, или построить свои ЦОДы. Этот вопрос необходимо согласовать с бизнесом.  
+ ![](img/Pasted%20image%2020231002075842.png)
  > 1. VK имеет 3 ЦОДа в Москве, в Санкт-Петербурге и Екатеринбурге \[[38](https://uchet-jkh.ru/i/gde-naxodyatsya-servera-vkontakte/#:~:text=%D0%A1%D0%B5%D0%B9%D1%87%D0%B0%D1%81%20%D0%92%D0%9A%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D0%B5%20%D0%B8%D0%BC%D0%B5%D0%B5%D1%82%20%D0%BD%D0%B5%D1%81%D0%BA%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE%20%D0%BA%D1%80%D1%83%D0%BF%D0%BD%D1%8B%D1%85%20%D1%86%D0%B5%D0%BD%D1%82%D1%80%D0%BE%D0%B2%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B8%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85)], а также сеть CDN, состоящую из 100 серверов \[[39](https://habr.com/ru/news/731714/#:~:text=%D0%9F%D0%BE%20%D0%B8%D1%85%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D0%BC%2C%20VK%20%D1%83%D0%B6%D0%B5%20%D0%BD%D0%B5%D1%81%D0%BA%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE%20%D0%BB%D0%B5%D1%82%20%D1%80%D0%B0%D0%B7%D0%B2%D0%B8%D0%B2%D0%B0%D0%B5%D1%82%20%D1%81%D0%B2%D0%BE%D1%8E%20CDN%2D%D1%81%D0%B5%D1%82%D1%8C%2C%20%D0%B0%20%D0%B2%20%D1%8D%D1%82%D0%BE%D0%BC%20%D0%B3%D0%BE%D0%B4%D1%83%20%D0%BA%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D1%8F%20%D1%80%D0%B5%D1%88%D0%B8%D0%BB%D0%B0%20%D1%83%D0%B2%D0%B5%D0%BB%D0%B8%D1%87%D0%B8%D1%82%D1%8C%20%D0%B5%D1%91%20%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%80%D0%BD%D0%BE%20%D0%B2%D0%B4%D0%B2%D0%BE%D0%B5%20%D0%B1%D0%BE%D0%BB%D0%B5%D0%B5%20%D1%87%D0%B5%D0%BC%20%D1%81%D0%BE%20100%20CDN%2D%D1%83%D0%B7%D0%BB%D0%BE%D0%B2%2C%20%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D1%8B%D0%B5%20%D1%81%D0%B5%D0%B9%D1%87%D0%B0%D1%81%20%D0%B5%D1%81%D1%82%D1%8C%20%D1%83%20VK%20%D0%BF%D0%BE%20%D0%B2%D1%81%D0%B5%D0%B9%20%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B5.)]. 
- > 2. Сервис YouTube имеет один ДЦ в России \[[40](https://youtubeprofi.info/raspolozhenie-i-kolichestvo-serverov-youtube/#:~:text=%D0%B2%20%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8%20%D0%B8%20%D0%AE%D0%B6%D0%BD%D0%BE%D0%B9%20%D0%90%D0%BC%D0%B5%D1%80%D0%B8%D0%BA%D0%B5%20%E2%80%93%20%D0%BF%D0%BE%201.)] (основную нагрузку по потреблению видео берут на себя CDN)
+ > 2. Сервис YouTube имеет один российский ДЦ в Москве \[[40](https://youtubeprofi.info/raspolozhenie-i-kolichestvo-serverov-youtube/#:~:text=%D0%B2%20%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8%20%D0%B8%20%D0%AE%D0%B6%D0%BD%D0%BE%D0%B9%20%D0%90%D0%BC%D0%B5%D1%80%D0%B8%D0%BA%D0%B5%20%E2%80%93%20%D0%BF%D0%BE%201.)] (основную нагрузку по потреблению видео берут на себя CDN)
+ 
+
+## 4. Локальная балансировка нагрузки <a name="4"></a>
+
+### 4.1 Схема локальной балансировки для входящих и межсервисных запросов
+
+1. **CDN держит "прогретые" соединения с граничными маршрутизаторами** в ЦОДах. Для обеспечения доступности и отказоустойчивости зарезервируем второй маршрутизатор (резервирование N+1). Используем для этого протокол **VRRP**. 
+2. Многоуровневая балансировка. После граничного маршрутизатора следует **слой коммутаторов**, далее - **слой L7 балансировщиков**. Симметричная топология позволяет балансировать трафик посредством стека **BGP, ECMP**.
+	- многопоточные сетевые карты MSI-X (несколько очередей, обработка несколькими CPU) 
+	- на каждом балансере программный роутер (для BGP Anycast)
+	- режим **per-flow** для "закрепления" одной tcp сессии за одним серверов
+	- для избавления от поляризации добавление соли в хэш каждым узлом.
+	- **consistent hashing** для минимизации расщепления tcp сессий в случае добавления или удаление из балансировки L7 балансировщиков. 
+4. **L7 балансировщики** - **ingress controller**-ы кластера **k8s**. Контроллеры расположены на отдельных нодах из соображений безопасности, доступности, отказоустойчивости.  На каждом узле k8s присутствует Service Discovery (kube-dns). 
+	- реализация L7 balancer - **envoy**
+	- динамическое конфигурирование upsteram-ов через SD (**?**).
+	- **liveness** и **readiness** пробы
+	- **функциональная балансировка** по субдоменам и префиксам. 
+	- **резервирование балансировщиков через VRRP**
+	- **rate limiting**
+	- **ssl termination**. Оптимизация: **session cache, session tickets** 
+5. Балансировка сервисом между подами в рамках одного replicaset.  
+
+
