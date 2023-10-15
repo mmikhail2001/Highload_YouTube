@@ -304,5 +304,6 @@
 ## 5. Логическая схема БД <a name="5"></a>
 
 Ссылка на [ER-диаграмму](https://drawsql.app/teams/bmstu-7/diagrams/youtube)
-![drawSQL-youtube-export-2023-10-09](https://github.com/mmikhail2001/Highload_YouTube/assets/71098937/137af5c4-b550-4049-8664-fccf9280ea4a)
+![](img/drawSQL-youtube-export-2023-10-15%201.png)
+
 
