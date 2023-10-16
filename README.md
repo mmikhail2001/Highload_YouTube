@@ -1,4 +1,4 @@
-# Highload YouTube
+![Youtube2 drawio](https://github.com/mmikhail2001/Highload_YouTube/assets/71098937/de03531b-ee23-4406-876b-557921dd6e78)# Highload YouTube
 
 ## Содержание
 * ### [1. Тема, целевая аудитория](#1)
@@ -6,6 +6,7 @@
 * ### [3. Глобальная балансировка нагрузки](#3)
 * ### [4. Локальная балансировка нагрузки](#4)
 * ### [5. Логическая схема БД](#5)
+* ### [6. Физическая схема БД](#6)
 
 ## 1. Тема и целевая аудитория<a name="1"></a>
 
@@ -305,5 +306,12 @@
 
 Ссылка на [ER-диаграмму](https://drawsql.app/teams/bmstu-7/diagrams/youtube)
 ![](img/drawSQL-youtube-export-2023-10-15%201.png)
+
+
+## 5. Физическая схема БД <a name="6"></a>
+
+Ссылка на [физическую схему](https://drawsql.app/teams/bmstu-7/diagrams/youtube](https://drive.google.com/file/d/1pL2ZMze6rzH9rk132Jd2hL3U_TRu0PPp/view?usp=sharing)https://drive.google.com/file/d/1pL2ZMze6rzH9rk132Jd2hL3U_TRu0PPp/view?usp=sharing)
+![Youtube2 drawio](https://github.com/mmikhail2001/Highload_YouTube/assets/71098937/1f7387b7-9e1e-4247-b141-f1ef05e6b65a)
+
 
 
