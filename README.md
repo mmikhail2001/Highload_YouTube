@@ -310,7 +310,7 @@
 
 ## 5. Физическая схема БД <a name="6"></a>
 
-Ссылка на [физическую схему](https://drawsql.app/teams/bmstu-7/diagrams/youtube](https://drive.google.com/file/d/1pL2ZMze6rzH9rk132Jd2hL3U_TRu0PPp/view?usp=sharing)https://drive.google.com/file/d/1pL2ZMze6rzH9rk132Jd2hL3U_TRu0PPp/view?usp=sharing)
+Ссылка на [физическую схему](https://drive.google.com/file/d/1pL2ZMze6rzH9rk132Jd2hL3U_TRu0PPp/view?usp=sharing)
 ![Youtube2 drawio](https://github.com/mmikhail2001/Highload_YouTube/assets/71098937/1f7387b7-9e1e-4247-b141-f1ef05e6b65a)
 
 
