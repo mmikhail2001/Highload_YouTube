@@ -1,4 +1,4 @@
-![Youtube2 drawio](https://github.com/mmikhail2001/Highload_YouTube/assets/71098937/de03531b-ee23-4406-876b-557921dd6e78)# Highload YouTube
+# Highload YouTube
 
 ## Содержание
 * ### [1. Тема, целевая аудитория](#1)
