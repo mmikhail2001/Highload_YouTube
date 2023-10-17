@@ -330,7 +330,8 @@
 
 
 Ссылка на [физическую схему](https://drive.google.com/file/d/1pL2ZMze6rzH9rk132Jd2hL3U_TRu0PPp/view?usp=sharing)
-![Youtube drawio (1)](https://github.com/mmikhail2001/Highload_YouTube/assets/71098937/1544ffb7-2c9d-46b4-b6d3-6d4449f612b6)
+![2 drawio](https://github.com/mmikhail2001/Highload_YouTube/assets/71098937/a6b82270-21d2-46da-b4d8-fcf3216bf799)
+
 
 
 
