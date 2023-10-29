@@ -55,9 +55,9 @@
 |Количество лайков / 100 просмотров\[[18](https://tubularlabs.com/blog/3-metrics-youtube-success/#:~:text=Likes%20to%20Views%3A%20How%20Popular%20is%20Your%20Video%3F)].|Мир|4|LIKES|
 |Количество новых подписок / день / канал \[[19](https://medium.com/@jasonrbodie/average-youtube-channel-growth-rate-f6837584c9ac)]|Мир|1000|SUBS|
 |Количество поисковых запросов / день \[[20](https://www.globalmediainsight.com/blog/youtube-users-statistics/#searchstat:~:text=Every%20day%2C%20more%20than%203.5%20billion%20searches%20are%20made%20on%20YouTube.)]|Мир|3.5 млрд.|SEARCH_DAY|
-|Средняя продолжительность видео (мин)\[[20](https://bloggingwizard.com/youtube-statistics/#:~:text=7.-,The%20average%20length%20of%20a%20YouTube%20video%20is%2011.7%20minutes,-According%20to%20Statista)]|Мир|11.7|DURATION|
-|Количество посещений страниц / день / пользователь \[[21](https://www.globalmediainsight.com/blog/youtube-users-statistics/#:~:text=An%20average%20YouTube%20visitor%20checks%20nearly%20nine%20pages%20per%20day.%C2%A0)]|Мир|9|VISITS_DAY_USER|
-|Средняя продолжительность посещения сайта (мин)\[[22](https://inclient.ru/youtube-stats/#:~:text=%D0%9F%D0%BE%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D0%BC%20Similarweb%20%D1%81%D1%80%D0%B5%D0%B4%D0%BD%D1%8F%D1%8F%20%D0%BF%D1%80%D0%BE%D0%B4%D0%BE%D0%BB%D0%B6%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D1%8C%20%D0%BF%D0%BE%D1%81%D0%B5%D1%89%D0%B5%D0%BD%D0%B8%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0%20youtube.com%20%D1%81%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BB%D1%8F%D0%B5%D1%82%2020%20%D0%BC%D0%B8%D0%BD%D1%83%D1%82%2016%20%D1%81%D0%B5%D0%BA%D1%83%D0%BD%D0%B4)] \[[23](https://www.statista.com/statistics/1257254/youtubecom-time-spent-per-visit/#:~:text=In%20March%202021%2C%20users%20worldwide%20spent%20an%20average%20of%201777%20seconds%20(29%20minutes%20and%2037%20seconds))]|Мир|20|VISIT_TIME|
+|Средняя продолжительность видео (мин)\[[21](https://bloggingwizard.com/youtube-statistics/#:~:text=7.-,The%20average%20length%20of%20a%20YouTube%20video%20is%2011.7%20minutes,-According%20to%20Statista)]|Мир|11.7|DURATION|
+|Количество посещений страниц / день / пользователь \[[22](https://www.globalmediainsight.com/blog/youtube-users-statistics/#:~:text=An%20average%20YouTube%20visitor%20checks%20nearly%20nine%20pages%20per%20day.%C2%A0)]|Мир|9|VISITS_DAY_USER|
+|Средняя продолжительность посещения сайта (мин)\[[23](https://inclient.ru/youtube-stats/#:~:text=%D0%9F%D0%BE%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D0%BC%20Similarweb%20%D1%81%D1%80%D0%B5%D0%B4%D0%BD%D1%8F%D1%8F%20%D0%BF%D1%80%D0%BE%D0%B4%D0%BE%D0%BB%D0%B6%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D1%8C%20%D0%BF%D0%BE%D1%81%D0%B5%D1%89%D0%B5%D0%BD%D0%B8%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0%20youtube.com%20%D1%81%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BB%D1%8F%D0%B5%D1%82%2020%20%D0%BC%D0%B8%D0%BD%D1%83%D1%82%2016%20%D1%81%D0%B5%D0%BA%D1%83%D0%BD%D0%B4)] \[[24](https://www.statista.com/statistics/1257254/youtubecom-time-spent-per-visit/#:~:text=In%20March%202021%2C%20users%20worldwide%20spent%20an%20average%20of%201777%20seconds%20(29%20minutes%20and%2037%20seconds))]|Мир|20|VISIT_TIME|
 
 Некоторую метрику на российском рынке приблизительно можно рассчитать относительно мировой метрики
 - METRICS (rus) = METRICS (world) * (MAU / MAU)
@@ -120,7 +120,7 @@
 
 |Хранилище |Стартовый размер (Пб)|Увеличение (Пб/год)|
 | ------------- |-------------|-------------|
-|Видео |540|540\[[24](https://youtubeprofi.info/raspolozhenie-i-kolichestvo-serverov-youtube/#:~:text=%D0%92%202016%20%D0%B3.%20%D1%83%20YouTube%20%D0%B1%D1%8B%D0%BB%D0%BE%201%20%D0%9F%D0%91%20(1%20000%20%D0%A2%D0%91)%20%D0%B2%20%D0%B4%D0%B5%D0%BD%D1%8C%20%D0%BD%D0%BE%D0%B2%D0%BE%D0%B3%D0%BE%20%D0%BA%D0%BE%D0%BD%D1%82%D0%B5%D0%BD%D1%82%D0%B0%2C%20%D0%B7%D0%B0%D0%B3%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BD%D0%B0%20%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D1%8B.)]|
+|Видео |540|540\[[25](https://youtubeprofi.info/raspolozhenie-i-kolichestvo-serverov-youtube/#:~:text=%D0%92%202016%20%D0%B3.%20%D1%83%20YouTube%20%D0%B1%D1%8B%D0%BB%D0%BE%201%20%D0%9F%D0%91%20(1%20000%20%D0%A2%D0%91)%20%D0%B2%20%D0%B4%D0%B5%D0%BD%D1%8C%20%D0%BD%D0%BE%D0%B2%D0%BE%D0%B3%D0%BE%20%D0%BA%D0%BE%D0%BD%D1%82%D0%B5%D0%BD%D1%82%D0%B0%2C%20%D0%B7%D0%B0%D0%B3%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BD%D0%B0%20%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D1%8B.)]|
 |Данные пользователя |4|2|
 
 |Сетевой трафик |Потребление|
@@ -157,8 +157,8 @@
 #### 2.2.2.1 Хранилище
 - **Видео**
 	- Во всем мире UPLOAD_DAY часов видео загружается на платформу каждый день. Значит, в России будет загружаться ```UPLOAD_DAY * K = 720 тыс. * 0.038 = 27_360 часов``` контента в день.
-	- Допустим, все видео имеют разрешения 1080p \[[25](https://osgamers.com/frequently-asked-questions/what-is-the-best-quality-for-youtube#:~:text=Statistics%20and%20research%20has%20shown%20that%20the%20amount%20people%20watching%20care%20about%20quality%20peaks%20at%201080p.%20There%20is%20no%20advantage%20as%20far%20as%20your%20viewers%20are%20concerned.)] \[[26](https://osgamers.com/frequently-asked-questions/what-is-the-best-quality-for-youtube#:~:text=The%20most%20common%20resolutions%20for%20Youtube%20videos%20are%201280%20x%20720p%20and%201920%20x%201080p)] с частотой кадров 30 fps в формате SDR. В хранилище хранятся все варианты разрешений для обеспечения адаптивного битрейта.
-		- 2160p (4K) - 40 Mbps \[[27](https://support.google.com/youtube/answer/1722171?hl=en#zippy=%2Cframe-rate%2Cbitrate%2Cvideo-codec-h%2Cvideo-resolution-and-aspect-ratio%2Ccolor-space:~:text=Recommended%20video%20bitrates%20for%20SDR%20uploads)]
+	- Допустим, все видео имеют разрешения 1080p \[[26](https://osgamers.com/frequently-asked-questions/what-is-the-best-quality-for-youtube#:~:text=Statistics%20and%20research%20has%20shown%20that%20the%20amount%20people%20watching%20care%20about%20quality%20peaks%20at%201080p.%20There%20is%20no%20advantage%20as%20far%20as%20your%20viewers%20are%20concerned.)] \[[27](https://osgamers.com/frequently-asked-questions/what-is-the-best-quality-for-youtube#:~:text=The%20most%20common%20resolutions%20for%20Youtube%20videos%20are%201280%20x%20720p%20and%201920%20x%201080p)] с частотой кадров 30 fps в формате SDR. В хранилище хранятся все варианты разрешений для обеспечения адаптивного битрейта.
+		- 2160p (4K) - 40 Mbps \[[28](https://support.google.com/youtube/answer/1722171?hl=en#zippy=%2Cframe-rate%2Cbitrate%2Cvideo-codec-h%2Cvideo-resolution-and-aspect-ratio%2Ccolor-space:~:text=Recommended%20video%20bitrates%20for%20SDR%20uploads)]
 		- 1440p (2K) - 16 Mbps
 		- **1080p - 8 Mbps** 
 		- 720p - 5 Mbps                                                 
@@ -199,7 +199,7 @@
 			- `UPLOAD_DAY * 60 * 60 * 8 Mbps / 8 /  1024 / 1024 / 1024 = 720 тыс. * 60 * 60 * 8 Mbps / 8 / 1024 / 1024 / 1024 = 2.4 Пб / сутки`
 - **Пиковое использование трафика (в секунду)**
 	- **Отдача видео (download)** - 44 Тбит / c 
-		- Допустим, что пиковое (дневное) потребление в 1.8 раза больше среднего \[[28](https://cloud.mail.ru/public/8Mau/tKmAN3kqb)] (слайд 14), получим `133 Пб/сутки * 1024 Тб * 1.8 / 86400 * 8 = 22 Тбит / c`
+		- Допустим, что пиковое (дневное) потребление в 1.8 раза больше среднего \[[29](https://cloud.mail.ru/public/8Mau/tKmAN3kqb)] (слайд 14), получим `133 Пб/сутки * 1024 Тб * 1.8 / 86400 * 8 = 22 Тбит / c`
 		- Также учтем некоторый **запас** по потреблению трафика - x2. Таким образом, потребление **44 Тбит/c**. 
 	- **Общее пиковое потребление (видео и страницы)** - 54 Тбит / c 
 		-  `(133 Пб/сутки + 25 Пб/сутки) * 1024 Тб * 1.8 / 86400 * 8 * 2 = 54 Тбит / c`
@@ -274,21 +274,21 @@
 
 
 *Пояснения:*
-1. Предложение всем локальным **ISP** использовать специальные **Storage сервера сервиса YouTube**\[[29](https://www.youtube.com/watch?v=g5v2-H-sabM&t=537s)] (уменьшение трафика с внешних линков ISP, ускорение доставки контента пользователям).
-2. Сеть **CDN** подключена к крупным точкам обмена трафика **Internet Exchange** (Cloud-IX объединяет в себе крупные Российские и не только IX \[[30](https://hww.ru/2021/03/tochki-obmena-trafikom-ili-kak-ustroen-internet-v-rossii/#:~:text=SDN%2C%20Xelent%2C%20Infobox.-,Cloud%2DIX,-%D0%92%202012%20%D0%B3)])
+1. Предложение всем локальным **ISP** использовать специальные **Storage сервера сервиса YouTube**\[[30](https://www.youtube.com/watch?v=g5v2-H-sabM&t=537s)] (уменьшение трафика с внешних линков ISP, ускорение доставки контента пользователям).
+2. Сеть **CDN** подключена к крупным точкам обмена трафика **Internet Exchange** (Cloud-IX объединяет в себе крупные Российские и не только IX \[[31](https://hww.ru/2021/03/tochki-obmena-trafikom-ili-kak-ustroen-internet-v-rossii/#:~:text=SDN%2C%20Xelent%2C%20Infobox.-,Cloud%2DIX,-%D0%92%202012%20%D0%B3)])
 3. **GeoDNS** сервера определяют локацию пользователя и возвращают IP адрес, за которым находится группа CDN. CDN, в свою очередь, знают об адресах ЦОДов. 
-4. Узлы сети в России распределены неравномерно \[[31](https://telecomlife.ru/magistralnaya-set/)], поэтому, если назначить всем CDN один IP адрес, **BGP Anycast** может выбрать оптимальный маршрут с точки зрения топологии (метрика - количество хопов), но географически неоптимальный \[[32](https://youtu.be/LPCbKzhvAGc?t=1265)]. Необходимо кластеризовать сервера CDN на локальные группы и назначить каждой группе один IP адрес. Маршрут до ближайшего к пользователю CDN в рамках группы будет выбран BGP роутером. Текущая конфигурация называется "Региональный Anycast" \[[33](https://www.youtube.com/watch?v=LPCbKzhvAGc&t=1370s)]. Преимущества и недостатки BGP Anycast \[[34](https://www.youtube.com/watch?v=9VVzu87lVbE&list=LL&index=12&t=1240s)].
+4. Узлы сети в России распределены неравномерно \[[32](https://telecomlife.ru/magistralnaya-set/)], поэтому, если назначить всем CDN один IP адрес, **BGP Anycast** может выбрать оптимальный маршрут с точки зрения топологии (метрика - количество хопов), но географически неоптимальный \[[33](https://youtu.be/LPCbKzhvAGc?t=1265)]. Необходимо кластеризовать сервера CDN на локальные группы и назначить каждой группе один IP адрес. Маршрут до ближайшего к пользователю CDN в рамках группы будет выбран BGP роутером. Текущая конфигурация называется "Региональный Anycast" \[[34](https://www.youtube.com/watch?v=LPCbKzhvAGc&t=1370s)]. Преимущества и недостатки BGP Anycast \[[35](https://www.youtube.com/watch?v=9VVzu87lVbE&list=LL&index=12&t=1240s)].
 5. CDN, близкий к пользователю сервер, держит с граничными маршрутизаторами ЦОДов постоянные "прогретые" соединения (увеличенное окно передачи) для ускорения доставки динамического контента и статики. Статика кэшируется на CDN.  
 
 ### 3.2 Физическое расположение датацентров
 
-- Наибольшая плотность населения России приходится на западную и юго-западную часть \[[35](https://www.statdata.ru/karta/plotnost-naseleniya-rossii)]. 
-- Расположим сервера в следующих городах: в Москве в двух зонах доступности и в Новосибирске (расположение ЦОДов в России \[[36](https://yandex.ru/maps/?display-text=Дата-центры&ll=42.072758%2C49.349507&mode=search&sctx=ZAAAAAgBEAAaKAoSCQiPNo5Y4FhAEUsgJXZt2U5AEhIJYJD0aZV0ZUAR9wX0wp1ZREAiBgABAgMEBSgKOABAkE5IAWIScG9pbnRfY29udGV4dF92Mj0xagJydZ0BzcxMPaABAKgBAL0B4DucO8IBMOO21I%2BKB8OQmYjwAfD6p5jyAvLMr6q2Aqi8qOj3BeP4xfGAAdPYgcuVBZG31ZugBeoBAPIBAPgBAIICGmNhdGVnb3J5X2lkOigxNzE2NDcwNDgzNDUpigIMMTcxNjQ3MDQ4MzQ1kgIAmgIMZGVza3RvcC1tYXBzqgIzMTkzNzMyNDc4MjQyLDIyMjI1ODM2NTUyMywyMDcyNDkzNzMyOTgsMjE2NjE4NTAzODAx&sll=42.072758%2C49.349507&sspn=18.673879%2C7.829843&text=category_id%3A%28171647048345%29&z=5.81)]\[[37](https://www.datacentermap.com/russia/)])
+- Наибольшая плотность населения России приходится на западную и юго-западную часть \[[36](https://www.statdata.ru/karta/plotnost-naseleniya-rossii)]. 
+- Расположим сервера в следующих городах: в Москве в двух зонах доступности и в Новосибирске (расположение ЦОДов в России \[[37](https://yandex.ru/maps/?display-text=Дата-центры&ll=42.072758%2C49.349507&mode=search&sctx=ZAAAAAgBEAAaKAoSCQiPNo5Y4FhAEUsgJXZt2U5AEhIJYJD0aZV0ZUAR9wX0wp1ZREAiBgABAgMEBSgKOABAkE5IAWIScG9pbnRfY29udGV4dF92Mj0xagJydZ0BzcxMPaABAKgBAL0B4DucO8IBMOO21I%2BKB8OQmYjwAfD6p5jyAvLMr6q2Aqi8qOj3BeP4xfGAAdPYgcuVBZG31ZugBeoBAPIBAPgBAIICGmNhdGVnb3J5X2lkOigxNzE2NDcwNDgzNDUpigIMMTcxNjQ3MDQ4MzQ1kgIAmgIMZGVza3RvcC1tYXBzqgIzMTkzNzMyNDc4MjQyLDIyMjI1ODM2NTUyMywyMDcyNDkzNzMyOTgsMjE2NjE4NTAzODAx&sll=42.072758%2C49.349507&sspn=18.673879%2C7.829843&text=category_id%3A%28171647048345%29&z=5.81)]\[[38](https://www.datacentermap.com/russia/)])
 - Сеть CDN будет состоять из 100 серверов, расположенных по всей стране. 
-- Сервера можно арендовать в ЦОДах существующих компаних, например, Selectel \[[1](https://docs.selectel.ru/control-panel-actions/selectel-infrastructure/#инфраструктура-selectel)] имеет 2 AZ в Москве и 1 AZ в Новосибирске, или построить свои ЦОДы. Этот вопрос необходимо согласовать с бизнесом.  
+- Сервера можно арендовать в ЦОДах существующих компаних, например, Selectel \[[39](https://docs.selectel.ru/control-panel-actions/selectel-infrastructure/#инфраструктура-selectel)] имеет 2 AZ в Москве и 1 AZ в Новосибирске, или построить свои ЦОДы. Этот вопрос необходимо согласовать с бизнесом.  
  ![](img/Pasted%20image%2020231002075842.png)
- > 1. VK имеет 3 ЦОДа в Москве, в Санкт-Петербурге и Екатеринбурге \[[38](https://uchet-jkh.ru/i/gde-naxodyatsya-servera-vkontakte/#:~:text=%D0%A1%D0%B5%D0%B9%D1%87%D0%B0%D1%81%20%D0%92%D0%9A%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D0%B5%20%D0%B8%D0%BC%D0%B5%D0%B5%D1%82%20%D0%BD%D0%B5%D1%81%D0%BA%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE%20%D0%BA%D1%80%D1%83%D0%BF%D0%BD%D1%8B%D1%85%20%D1%86%D0%B5%D0%BD%D1%82%D1%80%D0%BE%D0%B2%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B8%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85)], а также сеть CDN, состоящую из 100 серверов \[[39](https://habr.com/ru/news/731714/#:~:text=%D0%9F%D0%BE%20%D0%B8%D1%85%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D0%BC%2C%20VK%20%D1%83%D0%B6%D0%B5%20%D0%BD%D0%B5%D1%81%D0%BA%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE%20%D0%BB%D0%B5%D1%82%20%D1%80%D0%B0%D0%B7%D0%B2%D0%B8%D0%B2%D0%B0%D0%B5%D1%82%20%D1%81%D0%B2%D0%BE%D1%8E%20CDN%2D%D1%81%D0%B5%D1%82%D1%8C%2C%20%D0%B0%20%D0%B2%20%D1%8D%D1%82%D0%BE%D0%BC%20%D0%B3%D0%BE%D0%B4%D1%83%20%D0%BA%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D1%8F%20%D1%80%D0%B5%D1%88%D0%B8%D0%BB%D0%B0%20%D1%83%D0%B2%D0%B5%D0%BB%D0%B8%D1%87%D0%B8%D1%82%D1%8C%20%D0%B5%D1%91%20%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%80%D0%BD%D0%BE%20%D0%B2%D0%B4%D0%B2%D0%BE%D0%B5%20%D0%B1%D0%BE%D0%BB%D0%B5%D0%B5%20%D1%87%D0%B5%D0%BC%20%D1%81%D0%BE%20100%20CDN%2D%D1%83%D0%B7%D0%BB%D0%BE%D0%B2%2C%20%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D1%8B%D0%B5%20%D1%81%D0%B5%D0%B9%D1%87%D0%B0%D1%81%20%D0%B5%D1%81%D1%82%D1%8C%20%D1%83%20VK%20%D0%BF%D0%BE%20%D0%B2%D1%81%D0%B5%D0%B9%20%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B5.)]. 
- > 2. Сервис YouTube имеет один российский ДЦ в Москве \[[40](https://youtubeprofi.info/raspolozhenie-i-kolichestvo-serverov-youtube/#:~:text=%D0%B2%20%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8%20%D0%B8%20%D0%AE%D0%B6%D0%BD%D0%BE%D0%B9%20%D0%90%D0%BC%D0%B5%D1%80%D0%B8%D0%BA%D0%B5%20%E2%80%93%20%D0%BF%D0%BE%201.)] (основную нагрузку по потреблению видео берут на себя CDN)
+ > 1. VK имеет 3 ЦОДа в Москве, в Санкт-Петербурге и Екатеринбурге \[[40](https://uchet-jkh.ru/i/gde-naxodyatsya-servera-vkontakte/#:~:text=%D0%A1%D0%B5%D0%B9%D1%87%D0%B0%D1%81%20%D0%92%D0%9A%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D0%B5%20%D0%B8%D0%BC%D0%B5%D0%B5%D1%82%20%D0%BD%D0%B5%D1%81%D0%BA%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE%20%D0%BA%D1%80%D1%83%D0%BF%D0%BD%D1%8B%D1%85%20%D1%86%D0%B5%D0%BD%D1%82%D1%80%D0%BE%D0%B2%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B8%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85)], а также сеть CDN, состоящую из 100 серверов \[[41](https://habr.com/ru/news/731714/#:~:text=%D0%9F%D0%BE%20%D0%B8%D1%85%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D0%BC%2C%20VK%20%D1%83%D0%B6%D0%B5%20%D0%BD%D0%B5%D1%81%D0%BA%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE%20%D0%BB%D0%B5%D1%82%20%D1%80%D0%B0%D0%B7%D0%B2%D0%B8%D0%B2%D0%B0%D0%B5%D1%82%20%D1%81%D0%B2%D0%BE%D1%8E%20CDN%2D%D1%81%D0%B5%D1%82%D1%8C%2C%20%D0%B0%20%D0%B2%20%D1%8D%D1%82%D0%BE%D0%BC%20%D0%B3%D0%BE%D0%B4%D1%83%20%D0%BA%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D1%8F%20%D1%80%D0%B5%D1%88%D0%B8%D0%BB%D0%B0%20%D1%83%D0%B2%D0%B5%D0%BB%D0%B8%D1%87%D0%B8%D1%82%D1%8C%20%D0%B5%D1%91%20%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%80%D0%BD%D0%BE%20%D0%B2%D0%B4%D0%B2%D0%BE%D0%B5%20%D0%B1%D0%BE%D0%BB%D0%B5%D0%B5%20%D1%87%D0%B5%D0%BC%20%D1%81%D0%BE%20100%20CDN%2D%D1%83%D0%B7%D0%BB%D0%BE%D0%B2%2C%20%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D1%8B%D0%B5%20%D1%81%D0%B5%D0%B9%D1%87%D0%B0%D1%81%20%D0%B5%D1%81%D1%82%D1%8C%20%D1%83%20VK%20%D0%BF%D0%BE%20%D0%B2%D1%81%D0%B5%D0%B9%20%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B5.)]. 
+ > 2. Сервис YouTube имеет один российский ДЦ в Москве \[[42](https://youtubeprofi.info/raspolozhenie-i-kolichestvo-serverov-youtube/#:~:text=%D0%B2%20%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8%20%D0%B8%20%D0%AE%D0%B6%D0%BD%D0%BE%D0%B9%20%D0%90%D0%BC%D0%B5%D1%80%D0%B8%D0%BA%D0%B5%20%E2%80%93%20%D0%BF%D0%BE%201.)] (основную нагрузку по потреблению видео берут на себя CDN)
  
 
 ## 4. Локальная балансировка нагрузки <a name="4"></a>
@@ -406,8 +406,8 @@
 	- Присутствует
 - **Размер хранения** - 227 Тб / год
 	- Средний размер строки 330 байт
-		- Среднее количество лайков на видео 12 \[[1](https://charmbeautify.com/lifestyle/how-many-likes-does-the-average-person-get-on-youtube#:~:text=got%20your%20answer%3A-,The%20average%20person%20on%20YouTube%20gets%20about%2012%20likes%20per%20video,-.)]
-		- Среднее количество символов в комментарии 58 \[[2](http://cba.scit.wlv.ac.uk/~cm1993/papers/CommentingYouTubePreprint.pdf)]
+		- Среднее количество лайков на видео 12 \[[43](https://charmbeautify.com/lifestyle/how-many-likes-does-the-average-person-get-on-youtube#:~:text=got%20your%20answer%3A-,The%20average%20person%20on%20YouTube%20gets%20about%2012%20likes%20per%20video,-.)]
+		- Среднее количество символов в комментарии 58 \[[44](http://cba.scit.wlv.ac.uk/~cm1993/papers/CommentingYouTubePreprint.pdf)]
 	- Добавление комментария имеет 800 RPS
 	- `330 * 800 * 86400 * 30 * 365 = 227 Тб / год`
 
@@ -516,23 +516,30 @@
 
 ### 7.1 Рекомендации 
 
-Стандартный пайплайн включает следующие этапы.
-- Подготовка рекомендаций (оффлайн в hadoop)
-	- Расчет дневных статистик (совстречаемости товаров), фичей
-	- Агрегирование, подбор кандидатов
-	- Фильтрация/дополнительное ранжирование
-	- В общем, **каждую ночь готовиться новый пакет рекомендаций в соответствие с моделью совстречаемости**
-- Ответ на запрос, формирование выдачи (онлайн)
-	- Разбор запроса
-	- Поход за рекомендациями в рекомендательную систему (item2item рекомендации)
-	- Сортировка (по какому-то полю), фильтрация.
-	- Походы в БД за метаданными видео (превью, название, канал), проверка.
+- Новому пользователю рекомендуем самые популярные видео. Это видео за текущий месяц, которые быстро набирают просмотры. 
+- **Подготовка рекомендаций (оффлайн в hadoop)**
+	- **Модель совстречаемости** (user2item рекомендации): на каждой паре видео сопоставляем количество взаимодействий просмотров в рамках одной сессии. Таким образом для каждого видео можно получить список видероликов, которые пользователи смотрели вместе с первым.
+		- Дешево по ресурсам. Совстречаемость можно пересчитывать не часто.
+		- Быстрая выдача онлайн.
+		- Нет учета особенностей пользователя. Однако на веб-сервисе YouTube не требуется в профиле заполнять предпочтения, хобби, любимые тематики видео и т.д.
+- **Ответ на запрос, формирование выдачи (онлайн)**
+	- Подбор похожих видеороликов на те, которые пользователь смотрел недавно (последний месяц или неделя)
+	- Видео, для которых нужно найти похожие по модели совстречаемости, ранжируются исходя из **веса взаимодействия** с ними пользователя: время просмотра видео, наличие лайка, наличие комментария.
+	- Походы в БД за метаданными видео по id (превью, название, канал), проверка.
+	- Чистовое ранжирование: сортировка рекомендиуемых видео (по популярности видео, по соотношению лайков / дизлайков), фильтрация.
 
-(*либо user2item рекомендации, но дорогие по ресурсам*)
+
+Видео, которые присутствовали в рекомендациях, 
+- не встречаются больше в рекомендациях
+- анализируются на предмет клика по ним пользователя (для валидации модели).
+
+***User2item** рекомендации дорогие по ресурсам, так как каждый новый просмотр требует пересчета всего списка рекомендаций*
+
+Источник \[[45](https://github.com/vadim0912/ML2023/blob/master/lecture09/RecSys.pdf)]
 
 ### 7.2 Пайплайн обработки видео
 
-Пайплан обработки видео состоит из следующих стадий. Запускается во много потоков на многих нодах.
+Асинхронный пайплан обработки видео состоит из следующих стадий. Запускается во много потоков на многих нодах.
 - **Разбиение** исходных видеофайлов **на чанки**
 - **Фильтрация контента** нейросетями (цензура).  
 - Определение ключевых **тегов видео**, категории видео нейросетями.
