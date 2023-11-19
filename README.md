@@ -9,6 +9,7 @@
 * ### [6. Физическая схема БД](#6)
 * ### [7. Алгоритмы](#7)
 * ### [8. Технологии](#8)
+* ### [9. Схема проекта](#9)
 
 ## 1. Тема и целевая аудитория<a name="1"></a>
 
@@ -509,7 +510,7 @@
 	- Поиск по названию, описанию, тегам, специфике канала
  
 ### [Физическая схема](https://drive.google.com/file/d/1pL2ZMze6rzH9rk132Jd2hL3U_TRu0PPp/view?usp=sharing)
-![2 drawio](https://github.com/mmikhail2001/Highload_YouTube/assets/71098937/a6b82270-21d2-46da-b4d8-fcf3216bf799)
+
 
 
 
@@ -578,3 +579,10 @@
 | Elastic Search  | Поиск видео | Специализированная БД для задач полнотекстового поиска|
 | HTTP/3  | Протокол L7| Транспортный протокол Quic поверх UDP, отсутствие проблем TCP (блокировки head-of-line, RTT) |
 | HESP \[[1](https://habr.com/ru/companies/gcorelabs/articles/593805/)]  | Протокол стриминга видео| Адаптивный битрейт, низкие требования к полосе пропускания, поверх HTTP, поддержка онлайн трансляций. \[[1](https://investim.guru/news/youtube-hls-ili-rtmp-kakoy-protokol-luchshe-vybrat-dlya-potokovoy-peredachi-video?utm_referrer=https%3A%2F%2Fyandex.ru%2F)] **Конкуренты**: WebRTC, HLS, RTMP, HTTP range requests|
+
+## 9. Схема преокта <a name="9"></a>
+
+![Youtube-общая схема drawio (1)](https://github.com/mmikhail2001/Highload_YouTube/assets/71098937/b9d214c3-c494-4f3b-8823-1ee659d11e2d)
+
+
+### [Схема проекта](https://drive.google.com/file/d/1pL2ZMze6rzH9rk132Jd2hL3U_TRu0PPp/view?usp=sharing)
